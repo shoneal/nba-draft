@@ -441,7 +441,7 @@ const clubAbbreviations = {
   "Toronto Raptors": "TOR",
 }; // Аббревиатуры клубов
 const positions = ["PG", "SG", "G", "SF", "PF", "F", "C"]; // Позиции
-const basicLink = "https://shoneal.github.io/fantasy/images/players/";
+const basicLink = "https://shoneal.github.io/nba-draft/images/players/";
 
 let isUpdating = false; // Флаг обновления
 let playersCount = 0; // Счетчик игроков
