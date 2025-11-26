@@ -511,4 +511,8 @@ footer {
   .table_row:hover {
     background: transparent;
   }
+
+  .table_row-is_active {
+    background: var(--stroke-hover);
+  }
 }
