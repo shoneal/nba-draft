@@ -341,7 +341,7 @@ thead th {
   border: 2px solid var(--input-background);
   border-radius: 50%;
   overflow: hidden;
-  inline-size: 48px;
+  block-size: 48px;
   aspect-ratio: 1;
 }
 
