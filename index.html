@@ -9,10 +9,7 @@
       name="description"
       content="Draft player ratings and statistics for last season"
     />
-    <meta
-      property="og:url"
-      content="https://shoneal.github.io/nba-draft/"
-    />
+    <meta property="og:url" content="https://shoneal.github.io/nba-draft/" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="NBA Draft" />
     <meta
@@ -37,7 +34,10 @@
       name="twitter:image"
       content="https://shoneal.github.io/nba-draft/images/twitter-image.jpg"
     />
-    <meta property="vk:image" content="https://shoneal.github.io/nba-draft/images/twitter-image.jpg">
+    <meta
+      property="vk:image"
+      content="https://shoneal.github.io/nba-draft/images/twitter-image.jpg"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="./images/favicon.png" sizes="any" />
     <link rel="apple-touch-icon" href="./images/favicon.png" />
@@ -47,7 +47,15 @@
 
   <body>
     <header class="header">
-      <h1 class="title">Draft</h1>
+      <div class="profile">
+        <img
+          class="profile_img"
+          src="/images/Shaquille O'Neal.png"
+          alt="Profile Logo"
+        />
+        <h1 class="profile_name">Aquille Sho’Neal</h1>
+        <h2 class="profile_result">3-2-0</h2>
+      </div>
       <div class="filters">
         <div class="search">
           <svg
@@ -110,6 +118,14 @@
           <select class="select_positions select">
             <option value="ALL" selected>ALL</option>
           </select>
+        </div>
+        <div class="table_output">
+          <button class="table_output_button is_average">Averages</button>
+          <button
+            class="table_output_button is_total table_output_button-is_active"
+          >
+            Totals
+          </button>
         </div>
       </div>
     </header>

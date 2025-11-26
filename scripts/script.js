@@ -1,504 +1,119 @@
 const players = {
   PG: {
-    "Shai Gilgeous-Alexander": {
-      name: "Shai Gilgeous-Alexander",
-      team: "Oklahoma City Thunder",
-      positions: "PG",
-      number: 2,
-      Rank: 4,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/NM9YlVt2szZ37mdvRAbu.g--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6022.png",
-      lastSeasonStats: {
-        G: 76,
-        Min: "34:11",
-        "FG%": 51.9,
-        "FT%": 89.8,
-        "3PM": 163,
-        "3P%": 37.5,
-        Pts: 2484,
-        Reb: 379,
-        Ast: 486,
-        Stl: 131,
-        Blk: 77,
-        TO: 183,
-        DD: 6,
-        TD: 0,
-      },
-    },
-    "Cade Cunningham": {
-      name: "Cade Cunningham",
-      team: "Detroit Pistons",
-      positions: "PG, SG",
-      number: 2,
-      Rank: 6,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/exAtCyzmoTXFCkxoXiQ3Nw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10282024/6512.png",
-      lastSeasonStats: {
-        G: 70,
-        Min: "35:02",
-        "FG%": 46.9,
-        "FT%": 84.6,
-        "3PM": 149,
-        "3P%": 35.6,
-        Pts: 1830,
-        Reb: 425,
-        Ast: 638,
-        Stl: 71,
-        Blk: 53,
-        TO: 309,
-        DD: 31,
-        TD: 9,
-      },
-    },
     "Trae Young": {
       name: "Trae Young",
       team: "Atlanta Hawks",
-      positions: "PG, SG",
-      number: 11,
-      Rank: 11,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/39sAIkEEf6btOFqqQg5CGg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10212024/6016.png",
-      lastSeasonStats: {
-        G: 76,
-        Min: "36:02",
-        "FG%": 41.1,
-        "FT%": 87.5,
-        "3PM": 218,
-        "3P%": 34.0,
-        Pts: 1841,
-        Reb: 236,
-        Ast: 880,
-        Stl: 91,
-        Blk: 12,
-        TO: 355,
-        DD: 51,
-        TD: 0,
-      },
-    },
-    "Stephen Curry": {
-      name: "Stephen Curry",
-      team: "Golden State Warriors",
-      positions: "PG",
-      number: 30,
-      Rank: 16,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/HrOwm_ISkIIGHo7ZycOR.g--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/4612.png",
-      lastSeasonStats: {
-        G: 70,
-        Min: "32:10",
-        "FG%": 44.8,
-        "FT%": 93.3,
-        "3PM": 311,
-        "3P%": 39.7,
-        Pts: 1718,
-        Reb: 310,
-        Ast: 421,
-        Stl: 80,
-        Blk: 30,
-        TO: 200,
-        DD: 9,
-        TD: 0,
-      },
-    },
-    "Jalen Brunson": {
-      name: "Jalen Brunson",
-      team: "New York Knicks",
       positions: "PG",
       number: 11,
-      Rank: 20,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/A75UGH33dHn5gDCCE6FcPQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6044.png",
-      lastSeasonStats: {
-        G: 65,
-        Min: "35:24",
-        "FG%": 48.8,
+      Rank: 333,
+      statsTotals: {
+        G: 5,
+        Min: "27:48",
+        "FG%": 37.1,
         "FT%": 82.1,
-        "3PM": 152,
-        "3P%": 38.3,
-        Pts: 1690,
-        Reb: 187,
-        Ast: 475,
-        Stl: 60,
-        Blk: 8,
-        TO: 164,
-        DD: 14,
-        TD: 0,
-      },
-    },
-    "Josh Giddey": {
-      name: "Josh Giddey",
-      team: "Chicago Bulls",
-      positions: "PG, SG",
-      number: 3,
-      Rank: 29,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/zGB0bnlJASY8MHH.3VhYkg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10242024/6548.png",
-      lastSeasonStats: {
-        G: 70,
-        Min: "30:15",
-        "FG%": 46.5,
-        "FT%": 78.1,
-        "3PM": 105,
-        "3P%": 37.8,
-        Pts: 1022,
-        Reb: 566,
-        Ast: 503,
-        Stl: 84,
-        Blk: 45,
-        TO: 202,
-        DD: 30,
-        TD: 7,
-      },
-    },
-    "Payton Pritchard": {
-      name: "Payton Pritchard",
-      team: "Boston Celtics",
-      positions: "PG",
-      number: 11,
-      Rank: 65,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/bgTBqG6xudq3X4isNa7DAw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10102023/6418.png",
-      lastSeasonStats: {
-        G: 80,
-        Min: "28:23",
-        "FG%": 47.2,
-        "FT%": 84.5,
-        "3PM": 255,
-        "3P%": 40.7,
-        Pts: 1144,
-        Reb: 307,
-        Ast: 279,
-        Stl: 70,
-        Blk: 14,
-        TO: 83,
-        DD: 5,
-        TD: 0,
-      },
-    },
-    "Jalen Suggs": {
-      name: "Jalen Suggs",
-      team: "Orlando Magic",
-      positions: "PG",
-      number: 4,
-      Rank: 82,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/83tVIt9WMctL7EtLaFs0EQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6516.png",
-      lastSeasonStats: {
-        G: 35,
-        Min: "28:38",
-        "FG%": 41.0,
-        "FT%": 88.2,
-        "3PM": 76,
-        "3P%": 31.4,
-        Pts: 567,
-        Reb: 141,
-        Ast: 129,
-        Stl: 51,
-        Blk: 33,
-        TO: 102,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Stephon Castle": {
-      name: "Stephon Castle",
-      team: "San Antonio Spurs",
-      positions: "PG, SG",
-      number: 5,
-      Rank: 130,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/aLQDUwTsdZ2sDq2f8K5Cpg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10290.png",
-      lastSeasonStats: {
-        G: 81,
-        Min: "26:41",
-        "FG%": 42.8,
-        "FT%": 72.4,
-        "3PM": 95,
-        "3P%": 28.5,
-        Pts: 1190,
-        Reb: 297,
-        Ast: 332,
-        Stl: 74,
-        Blk: 22,
-        TO: 177,
-        DD: 6,
-        TD: 0,
-      },
-    },
-    "T.J. McConnell": {
-      name: "T.J. McConnell",
-      team: "Indiana Pacers",
-      positions: "PG",
-      number: 9,
-      Rank: 149,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/kGwTJlFaDvGmj9mrnjolEA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/5582.png",
-      lastSeasonStats: {
-        G: 79,
-        Min: "17:55",
-        "FG%": 51.9,
-        "FT%": 74.0,
-        "3PM": 15,
-        "3P%": 30.6,
-        Pts: 720,
-        Reb: 193,
-        Ast: 351,
-        Stl: 83,
-        Blk: 21,
-        TO: 109,
+        "3PM": 5,
+        "3P%": 19.2,
+        Pts: 89,
+        Reb: 10,
+        Ast: 39,
+        Stl: 4,
+        Blk: 1,
+        TO: 10,
         DD: 2,
         TD: 0,
       },
     },
-    "Cole Anthony": {
-      name: "Cole Anthony",
-      team: "Milwaukee Bucks",
-      positions: "PG",
-      number: 50,
-      Rank: 155,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/KJZ1Twd5xsUAO06JCX8BYA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6407.png",
-      lastSeasonStats: {
-        G: 67,
-        Min: "18:25",
-        "FG%": 42.4,
-        "FT%": 82.3,
-        "3PM": 77,
-        "3P%": 35.3,
-        Pts: 630,
-        Reb: 204,
-        Ast: 191,
-        Stl: 45,
-        Blk: 32,
-        TO: 103,
+    "Anthony Black": {
+      name: "Anthony Black",
+      team: "Orlando Magic",
+      positions: "PG, SG",
+      number: 0,
+      Rank: 136,
+      statsTotals: {
+        G: 19,
+        Min: "27:09",
+        "FG%": 48.9,
+        "FT%": 69.4,
+        "3PM": 23,
+        "3P%": 34.8,
+        Pts: 244,
+        Reb: 55,
+        Ast: 52,
+        Stl: 27,
+        Blk: 11,
+        TO: 39,
+        DD: 0,
+        TD: 0,
+      },
+    },
+    "Miles McBride": {
+      name: "Miles McBride",
+      team: "New York Knicks",
+      positions: "PG, SG",
+      number: 2,
+      Rank: 235,
+      statsTotals: {
+        G: 2,
+        Min: "30:30",
+        "FG%": 40.0,
+        "FT%": 0,
+        "3PM": 8,
+        "3P%": 36.4,
+        Pts: 36,
+        Reb: 4,
+        Ast: 2,
+        Stl: 0,
+        Blk: 2,
+        TO: 1,
+        DD: 0,
+        TD: 0,
+      },
+    },
+    "Quenton Jackson": {
+      name: "Quenton Jackson",
+      team: "Indiana Pacers",
+      positions: "PG, SG",
+      number: 29,
+      Rank: 266,
+      statsTotals: {
+        G: 1,
+        Min: "20:00",
+        "FG%": 25.0,
+        "FT%": 71.4,
+        "3PM": 0,
+        "3P%": 0,
+        Pts: 7,
+        Reb: 2,
+        Ast: 4,
+        Stl: 0,
+        Blk: 0,
+        TO: 1,
         DD: 0,
         TD: 0,
       },
     },
   },
   SG: {
-    "Derrick White": {
-      name: "Derrick White",
-      team: "Boston Celtics",
-      positions: "PG, SG",
-      number: 9,
-      Rank: 33,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/LN7xD44IeskEp7FECXKtvw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10222024/5842.png",
-      lastSeasonStats: {
-        G: 76,
-        Min: "33:52",
-        "FG%": 44.2,
-        "FT%": 83.9,
-        "3PM": 265,
-        "3P%": 38.4,
-        Pts: 1248,
-        Reb: 341,
-        Ast: 361,
-        Stl: 72,
-        Blk: 80,
-        TO: 131,
-        DD: 4,
-        TD: 0,
-      },
-    },
-    "Dyson Daniels": {
-      name: "Dyson Daniels",
-      team: "Atlanta Hawks",
-      positions: "PG, SG, SF",
-      number: 5,
-      Rank: 42,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/m1OyPDCsGnSa2Sv5NlRVyA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10212024/6698.png",
-      lastSeasonStats: {
-        G: 76,
-        Min: "33:50",
-        "FG%": 49.3,
-        "FT%": 59.3,
-        "3PM": 80,
-        "3P%": 34.0,
-        Pts: 1073,
-        Reb: 449,
-        Ast: 333,
-        Stl: 229,
-        Blk: 55,
-        TO: 155,
-        DD: 9,
-        TD: 0,
-      },
-    },
-    "Josh Hart": {
-      name: "Josh Hart",
-      team: "New York Knicks",
-      positions: "SG, SF, PF",
-      number: 3,
-      Rank: 57,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/rMMVYwF1ZFwLST0GfCx4Hw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/5843.png",
-      lastSeasonStats: {
-        G: 77,
-        Min: "37:37",
-        "FG%": 52.5,
-        "FT%": 77.6,
-        "3PM": 84,
-        "3P%": 33.3,
-        Pts: 1051,
-        Reb: 737,
-        Ast: 453,
-        Stl: 119,
-        Blk: 27,
-        TO: 158,
-        DD: 34,
-        TD: 9,
-      },
-    },
-    "Andrew Nembhard": {
-      name: "Andrew Nembhard",
-      team: "Indiana Pacers",
-      positions: "PG, SG",
-      number: 2,
-      Rank: 72,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/nHD.Gz6tl01.HoWuL3tUzw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6721.png",
-      lastSeasonStats: {
-        G: 65,
-        Min: "28:56",
-        "FG%": 45.8,
-        "FT%": 79.4,
-        "3PM": 51,
-        "3P%": 29.1,
-        Pts: 653,
-        Reb: 216,
-        Ast: 326,
-        Stl: 79,
-        Blk: 11,
-        TO: 112,
-        DD: 2,
-        TD: 0,
-      },
-    },
-    "Tyler Herro": {
-      name: "Tyler Herro",
-      team: "Miami Heat",
-      positions: "PG, SG",
-      number: 14,
-      Rank: 74,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/4kMyFhAuc6.Sz6aisM.Vew--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6175.png",
-      lastSeasonStats: {
-        G: 77,
-        Min: "35:23",
-        "FG%": 47.2,
-        "FT%": 87.8,
-        "3PM": 251,
-        "3P%": 37.5,
-        Pts: 1840,
-        Reb: 399,
-        Ast: 424,
-        Stl: 69,
-        Blk: 17,
-        TO: 198,
-        DD: 9,
-        TD: 0,
-      },
-    },
-    "Norman Powell": {
-      name: "Norman Powell",
-      team: "Miami Heat",
-      positions: "SG, SF",
-      number: 24,
-      Rank: 78,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/7iDOCI.TcN.3FS6Sws5gcg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/07082025/5506.png",
-      lastSeasonStats: {
-        G: 60,
-        Min: "32:38",
-        "FG%": 48.4,
-        "FT%": 80.4,
-        "3PM": 179,
-        "3P%": 41.8,
-        Pts: 1306,
-        Reb: 190,
-        Ast: 125,
-        Stl: 73,
-        Blk: 9,
-        TO: 108,
-        DD: 1,
-        TD: 0,
-      },
-    },
-    "Shaedon Sharpe": {
-      name: "Shaedon Sharpe",
-      team: "Portland Trail Blazers",
-      positions: "SG, SF",
-      number: 17,
-      Rank: 96,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/iJ7YV7cpC4TdN4_LpB_kRQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6697.png",
-      lastSeasonStats: {
-        G: 72,
-        Min: "31:17",
-        "FG%": 45.2,
-        "FT%": 78.5,
-        "3PM": 147,
-        "3P%": 31.1,
-        Pts: 1335,
-        Reb: 324,
-        Ast: 198,
-        Stl: 62,
-        Blk: 16,
-        TO: 150,
-        DD: 3,
-        TD: 0,
-      },
-    },
-    "Jaden Ivey": {
-      name: "Jaden Ivey",
-      team: "Detroit Pistons",
-      positions: "PG, SG",
-      number: 23,
-      Rank: 109,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/1bK9pmbLin0YmNr9iIZYWQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10282024/6695.png",
-      lastSeasonStats: {
-        G: 30,
-        Min: "29:56",
-        "FG%": 46.0,
-        "FT%": 73.3,
-        "3PM": 63,
-        "3P%": 40.9,
-        Pts: 528,
-        Reb: 124,
-        Ast: 119,
-        Stl: 28,
-        Blk: 11,
-        TO: 89,
-        DD: 0,
-        TD: 0,
-      },
-    },
     "N. Alexander-Walker": {
       name: "N. Alexander-Walker",
       team: "Atlanta Hawks",
-      positions: "SG, SF",
+      positions: "PG, SG, SF",
       number: 7,
-      Rank: 110,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/rly1IE.JPMHru3PmesjYBQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6205.png",
-      lastSeasonStats: {
-        G: 82,
-        Min: "25:17",
-        "FG%": 43.8,
-        "FT%": 78.0,
-        "3PM": 141,
-        "3P%": 38.1,
-        Pts: 773,
-        Reb: 265,
-        Ast: 223,
-        Stl: 50,
-        Blk: 34,
-        TO: 99,
-        DD: 1,
+      Rank: 84,
+      statsTotals: {
+        G: 17,
+        Min: "31:53",
+        "FG%": 46.0,
+        "FT%": 83.8,
+        "3PM": 39,
+        "3P%": 35.8,
+        Pts: 317,
+        Reb: 53,
+        Ast: 62,
+        Stl: 15,
+        Blk: 15,
+        TO: 38,
+        DD: 0,
         TD: 0,
       },
     },
@@ -507,854 +122,233 @@ const players = {
       team: "Minnesota Timberwolves",
       positions: "PG, SG",
       number: 0,
-      Rank: 111,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/xfSWuF6_Z9xedaOelpyjJQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6028.png",
-      lastSeasonStats: {
-        G: 62,
-        Min: "25:54",
-        "FG%": 42.2,
-        "FT%": 77.8,
-        "3PM": 174,
-        "3P%": 39.7,
-        Pts: 723,
-        Reb: 228,
-        Ast: 225,
-        Stl: 73,
-        Blk: 17,
-        TO: 99,
-        DD: 1,
-        TD: 0,
-      },
-    },
-    "Alex Caruso": {
-      name: "Alex Caruso",
-      team: "Oklahoma City Thunder",
-      positions: "SG, SF",
-      number: 9,
-      Rank: 178,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/bHa3puDbSqU6rDaGT4uIdQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/5754.png",
-      lastSeasonStats: {
-        G: 54,
-        Min: "19:17",
-        "FG%": 44.6,
-        "FT%": 82.4,
-        "3PM": 60,
-        "3P%": 35.3,
-        Pts: 382,
-        Reb: 159,
-        Ast: 137,
-        Stl: 87,
-        Blk: 30,
-        TO: 37,
+      Rank: 65,
+      statsTotals: {
+        G: 17,
+        Min: "31:11",
+        "FG%": 41.6,
+        "FT%": 86.7,
+        "3PM": 52,
+        "3P%": 38.8,
+        Pts: 235,
+        Reb: 66,
+        Ast: 58,
+        Stl: 20,
+        Blk: 8,
+        TO: 25,
         DD: 0,
         TD: 0,
       },
     },
-    "Aaron Wiggins": {
-      name: "Aaron Wiggins",
-      team: "Oklahoma City Thunder",
-      positions: "SG, SF",
-      number: 21,
-      Rank: 184,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/JcWF6Ur45.0aznFuOgaacA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6597.png",
-      lastSeasonStats: {
-        G: 76,
-        Min: "22:57",
-        "FG%": 48.8,
-        "FT%": 83.1,
-        "3PM": 130,
-        "3P%": 38.3,
-        Pts: 914,
-        Reb: 295,
-        Ast: 134,
-        Stl: 60,
-        Blk: 18,
-        TO: 69,
+    "VJ Edgecombe": {
+      name: "VJ Edgecombe",
+      team: "Philadelphia 76ers",
+      positions: "PG, SG",
+      number: 77,
+      Rank: 121,
+      statsTotals: {
+        G: 15,
+        Min: "37:20",
+        "FG%": 40.7,
+        "FT%": 73.7,
+        "3PM": 30,
+        "3P%": 36.6,
+        Pts: 234,
+        Reb: 90,
+        Ast: 63,
+        Stl: 19,
+        Blk: 7,
+        TO: 29,
         DD: 2,
         TD: 0,
       },
     },
-  },
-  PF: {
-    "Giannis Antetokounmpo": {
-      name: "Giannis Antetokounmpo",
-      team: "Milwaukee Bucks",
-      positions: "PF, C",
-      number: 34,
-      Rank: 3,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/GEry1pkEEtsfXbDZJNDINw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10282024/5185.png",
-      lastSeasonStats: {
-        G: 67,
-        Min: "34:10",
-        "FG%": 60.1,
-        "FT%": 61.7,
-        "3PM": 14,
-        "3P%": 22.2,
-        Pts: 2036,
-        Reb: 798,
-        Ast: 433,
-        Stl: 58,
-        Blk: 78,
-        TO: 206,
-        DD: 55,
-        TD: 11,
-      },
-    },
-    "Anthony Davis": {
-      name: "Anthony Davis",
-      team: "Dallas Mavericks",
-      positions: "PF, C",
-      number: 3,
-      Rank: 7,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/uj2ZGXaqXotMWbUpAzMLvQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/02032025/5007.png",
-      lastSeasonStats: {
-        G: 42,
-        Min: "34:17",
-        "FG%": 52.8,
-        "FT%": 78.8,
-        "3PM": 28,
-        "3P%": 29.8,
-        Pts: 1081,
-        Reb: 499,
-        Ast: 141,
-        Stl: 54,
-        Blk: 90,
-        TO: 93,
-        DD: 36,
-        TD: 1,
-      },
-    },
-    "Chet Holmgren": {
-      name: "Chet Holmgren",
-      team: "Oklahoma City Thunder",
-      positions: "PF, C",
-      number: 7,
-      Rank: 23,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/UQ.v8bynxoNsY3dnkKe0Ng--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6692.png",
-      lastSeasonStats: {
-        G: 32,
-        Min: "27:24",
-        "FG%": 49.0,
-        "FT%": 75.4,
-        "3PM": 44,
-        "3P%": 37.9,
-        Pts: 479,
-        Reb: 257,
-        Ast: 63,
-        Stl: 23,
-        Blk: 71,
-        TO: 56,
-        DD: 11,
-        TD: 0,
-      },
-    },
-    "Pascal Siakam": {
-      name: "Pascal Siakam",
-      team: "Indiana Pacers",
-      positions: "PF, C",
-      number: 43,
-      Rank: 30,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/Sb6fQJKv7sNcTFtNWFTHZA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/5658.png",
-      lastSeasonStats: {
-        G: 78,
-        Min: "32:40",
-        "FG%": 51.9,
-        "FT%": 73.4,
-        "3PM": 126,
-        "3P%": 38.9,
-        Pts: 1578,
-        Reb: 540,
-        Ast: 263,
-        Stl: 70,
-        Blk: 42,
-        TO: 109,
-        DD: 11,
-        TD: 0,
-      },
-    },
-    "Paolo Banchero": {
-      name: "Paolo Banchero",
-      team: "Orlando Magic",
-      positions: "PF, C",
-      number: 5,
-      Rank: 40,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/0mjMfHmGz5Ta64xNrDe_NA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6691.png",
-      lastSeasonStats: {
-        G: 46,
-        Min: "34:23",
-        "FG%": 45.2,
-        "FT%": 72.7,
-        "3PM": 87,
-        "3P%": 32.0,
-        Pts: 1191,
-        Reb: 345,
-        Ast: 219,
-        Stl: 36,
-        Blk: 28,
-        TO: 136,
-        DD: 11,
-        TD: 0,
-      },
-    },
-    "Jaden McDaniels": {
-      name: "Jaden McDaniels",
-      team: "Minnesota Timberwolves",
-      positions: "SF, PF",
-      number: 3,
-      Rank: 117,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/V_QW0FnmXR4S2XieGUoSMA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6420.png",
-      lastSeasonStats: {
-        G: 82,
-        Min: "31:53",
-        "FG%": 47.7,
-        "FT%": 81.3,
-        "3PM": 100,
-        "3P%": 33.0,
-        Pts: 1000,
-        Reb: 470,
-        Ast: 163,
-        Stl: 110,
-        Blk: 74,
-        TO: 95,
-        DD: 10,
-        TD: 0,
-      },
-    },
-    "Toumani Camara": {
-      name: "Toumani Camara",
-      team: "Portland Trail Blazers",
-      positions: "SF, PF",
-      number: 33,
-      Rank: 123,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/XV4X42T8p4jw8fC.yMStfQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10065.png",
-      lastSeasonStats: {
-        G: 78,
-        Min: "32:40",
-        "FG%": 45.8,
-        "FT%": 72.2,
-        "3PM": 135,
-        "3P%": 37.5,
-        Pts: 882,
-        Reb: 450,
-        Ast: 175,
-        Stl: 116,
-        Blk: 50,
-        TO: 109,
-        DD: 4,
-        TD: 0,
-      },
-    },
-    "Jeremy Sochan": {
-      name: "Jeremy Sochan",
-      team: "San Antonio Spurs",
-      positions: "PF, C",
-      number: 10,
-      Rank: 133,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/3y7cOegVTF3sO1bNIcCG9A--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6699.png",
-      lastSeasonStats: {
-        G: 54,
-        Min: "25:16",
-        "FG%": 53.5,
-        "FT%": 69.6,
-        "3PM": 28,
-        "3P%": 30.8,
-        Pts: 617,
-        Reb: 352,
-        Ast: 128,
-        Stl: 45,
-        Blk: 27,
-        TO: 84,
-        DD: 8,
-        TD: 0,
-      },
-    },
-    "P.J. Washington": {
-      name: "P.J. Washington",
-      team: "Dallas Mavericks",
-      positions: "SF, PF",
-      number: 25,
-      Rank: 145,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/f2gXF0zDzb33sA52gXlckQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10252024/6174.png",
-      lastSeasonStats: {
-        G: 57,
-        Min: "32:12",
-        "FG%": 45.3,
-        "FT%": 72.2,
-        "3PM": 91,
-        "3P%": 38.1,
-        Pts: 836,
-        Reb: 442,
-        Ast: 131,
-        Stl: 63,
-        Blk: 60,
-        TO: 118,
-        DD: 14,
-        TD: 0,
-      },
-    },
-  },
-  SF: {
-    "Amen Thompson": {
-      name: "Amen Thompson",
-      team: "Houston Rockets",
-      positions: "PG, SG, SF",
+    "Gradey Dick": {
+      name: "Gradey Dick",
+      team: "Toronto Raptors",
+      positions: "SG, SF",
       number: 1,
-      Rank: 19,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/evY6JhVg8UTUX6XOwwQ_VQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10108.png",
-      lastSeasonStats: {
-        G: 69,
-        Min: "32:15",
-        "FG%": 55.7,
-        "FT%": 68.4,
-        "3PM": 25,
-        "3P%": 27.5,
-        Pts: 970,
-        Reb: 564,
-        Ast: 265,
-        Stl: 97,
-        Blk: 89,
-        TO: 138,
-        DD: 21,
-        TD: 3,
-      },
-    },
-    "Jalen Williams": {
-      name: "Jalen Williams",
-      team: "Oklahoma City Thunder",
-      positions: "SF, PF",
-      number: 8,
-      Rank: 21,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/Gp6ak2G9mybSaicZPwRu3Q--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6702.png",
-      lastSeasonStats: {
-        G: 69,
-        Min: "32:25",
-        "FG%": 48.4,
-        "FT%": 78.9,
-        "3PM": 124,
-        "3P%": 36.5,
-        Pts: 1490,
-        Reb: 369,
-        Ast: 354,
-        Stl: 111,
-        Blk: 46,
-        TO: 150,
-        DD: 3,
+      Rank: 234,
+      statsTotals: {
+        G: 7,
+        Min: "15:26",
+        "FG%": 38.5,
+        "FT%": 77.8,
+        "3PM": 6,
+        "3P%": 28.6,
+        Pts: 50,
+        Reb: 18,
+        Ast: 2,
+        Stl: 3,
+        Blk: 0,
+        TO: 1,
+        DD: 0,
         TD: 0,
       },
     },
+    "Isaiah Joe": {
+      name: "Isaiah Joe",
+      team: "Oklahoma City Thunder",
+      positions: "SG",
+      number: 11,
+      Rank: 124,
+      statsTotals: {
+        G: 7,
+        Min: "25:51",
+        "FG%": 40.6,
+        "FT%": 91.7,
+        "3PM": 22,
+        "3P%": 40.0,
+        Pts: 100,
+        Reb: 19,
+        Ast: 10,
+        Stl: 5,
+        Blk: 1,
+        TO: 10,
+        DD: 0,
+        TD: 0,
+      },
+    },
+    "Cam Spencer": {
+      name: "Cam Spencer",
+      team: "Memphis Grizzlies",
+      positions: "SG",
+      number: 24,
+      Rank: 106,
+      statsTotals: {
+        G: 3,
+        Min: "22:40",
+        "FG%": 35.3,
+        "FT%": 80.0,
+        "3PM": 3,
+        "3P%": 37.5,
+        Pts: 19,
+        Reb: 5,
+        Ast: 10,
+        Stl: 2,
+        Blk: 1,
+        TO: 0,
+        DD: 0,
+        TD: 0,
+      },
+    },
+    "Caris LeVert": {
+      name: "Caris LeVert",
+      team: "Detroit Pistons",
+      positions: "SG, SF",
+      number: 8,
+      Rank: 255,
+      statsTotals: {
+        G: 2,
+        Min: "15:00",
+        "FG%": 42.9,
+        "FT%": 0,
+        "3PM": 1,
+        "3P%": 16.7,
+        Pts: 13,
+        Reb: 5,
+        Ast: 9,
+        Stl: 1,
+        Blk: 0,
+        TO: 4,
+        DD: 0,
+        TD: 0,
+      },
+    },
+    "Javonte Green": {
+      name: "Javonte Green",
+      team: "Detroit Pistons",
+      positions: "SG, SF",
+      number: 31,
+      Rank: 193,
+      statsTotals: {
+        G: 3,
+        Min: "23:00",
+        "FG%": 68.4,
+        "FT%": 100.0,
+        "3PM": 3,
+        "3P%": 37.5,
+        Pts: 36,
+        Reb: 8,
+        Ast: 1,
+        Stl: 4,
+        Blk: 0,
+        TO: 3,
+        DD: 0,
+        TD: 0,
+      },
+    },
+  },
+  PF: {},
+  SF: {
     "Jalen Johnson": {
       name: "Jalen Johnson",
       team: "Atlanta Hawks",
       positions: "SF, PF",
       number: 1,
-      Rank: 24,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/DRqFlXQxP7y_eeAOlhseBw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10212024/6562.png",
-      lastSeasonStats: {
-        G: 36,
-        Min: "35:40",
-        "FG%": 50.0,
-        "FT%": 74.6,
-        "3PM": 44,
-        "3P%": 31.2,
-        Pts: 680,
-        Reb: 359,
-        Ast: 181,
-        Stl: 56,
-        Blk: 36,
-        TO: 106,
-        DD: 20,
+      Rank: 6,
+      statsTotals: {
+        G: 17,
+        Min: "33:53",
+        "FG%": 54.7,
+        "FT%": 80.2,
+        "3PM": 22,
+        "3P%": 38.6,
+        Pts: 365,
+        Reb: 161,
+        Ast: 119,
+        Stl: 28,
+        Blk: 7,
+        TO: 53,
+        DD: 9,
         TD: 1,
-      },
-    },
-    "Jaylen Brown": {
-      name: "Jaylen Brown",
-      team: "Boston Celtics",
-      positions: "SG, SF",
-      number: 7,
-      Rank: 28,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/0NCqY7YWTNjDItBq8JocKg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10222024/5602.png",
-      lastSeasonStats: {
-        G: 63,
-        Min: "34:15",
-        "FG%": 46.3,
-        "FT%": 76.4,
-        "3PM": 116,
-        "3P%": 32.4,
-        Pts: 1398,
-        Reb: 368,
-        Ast: 286,
-        Stl: 73,
-        Blk: 19,
-        TO: 162,
-        DD: 5,
-        TD: 0,
-      },
-    },
-    "Trey Murphy III": {
-      name: "Trey Murphy III",
-      team: "New Orleans Pelicans",
-      positions: "SF, PF",
-      number: 25,
-      Rank: 38,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/88fY519oxuit3a5VB9uzWQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6559.png",
-      lastSeasonStats: {
-        G: 53,
-        Min: "34:59",
-        "FG%": 45.4,
-        "FT%": 88.7,
-        "3PM": 158,
-        "3P%": 36.1,
-        Pts: 1124,
-        Reb: 268,
-        Ast: 188,
-        Stl: 56,
-        Blk: 39,
-        TO: 103,
-        DD: 2,
-        TD: 0,
-      },
-    },
-    "Deni Avdija": {
-      name: "Deni Avdija",
-      team: "Portland Trail Blazers",
-      positions: "SF, PF",
-      number: 8,
-      Rank: 43,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/74lXWLe2gW51v5Egd2bULg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6401.png",
-      lastSeasonStats: {
-        G: 72,
-        Min: "30:01",
-        "FG%": 47.6,
-        "FT%": 78.0,
-        "3PM": 125,
-        "3P%": 36.5,
-        Pts: 1219,
-        Reb: 522,
-        Ast: 281,
-        Stl: 71,
-        Blk: 35,
-        TO: 196,
-        DD: 17,
-        TD: 2,
       },
     },
     "Ausar Thompson": {
       name: "Ausar Thompson",
       team: "Detroit Pistons",
-      positions: "SF, PF",
+      positions: "SG, SF, PF",
       number: 9,
-      Rank: 77,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/0xOSpVOZqD5.UOH1AqEqpw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10282024/10096.png",
-      lastSeasonStats: {
-        G: 59,
-        Min: "22:31",
-        "FG%": 53.5,
-        "FT%": 64.1,
-        "3PM": 11,
-        "3P%": 22.4,
-        Pts: 594,
-        Reb: 303,
-        Ast: 134,
-        Stl: 98,
-        Blk: 40,
-        TO: 80,
-        DD: 3,
+      Rank: 160,
+      statsTotals: {
+        G: 11,
+        Min: "29:16",
+        "FG%": 51.6,
+        "FT%": 50.0,
+        "3PM": 4,
+        "3P%": 30.8,
+        Pts: 152,
+        Reb: 69,
+        Ast: 38,
+        Stl: 19,
+        Blk: 7,
+        TO: 15,
+        DD: 2,
         TD: 0,
-      },
-    },
-    "Bennedict Mathurin": {
-      name: "Bennedict Mathurin",
-      team: "Indiana Pacers",
-      positions: "SG, SF",
-      number: 00,
-      Rank: 90,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/lrZAsC719pupPvH65E1sKw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6696.png",
-      lastSeasonStats: {
-        G: 72,
-        Min: "29:51",
-        "FG%": 45.8,
-        "FT%": 83.1,
-        "3PM": 98,
-        "3P%": 34.0,
-        Pts: 1156,
-        Reb: 383,
-        Ast: 136,
-        Stl: 47,
-        Blk: 24,
-        TO: 135,
-        DD: 8,
-        TD: 0,
-      },
-    },
-    "Mikal Bridges": {
-      name: "Mikal Bridges",
-      team: "New York Knicks",
-      positions: "SF, PF",
-      number: 25,
-      Rank: 97,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/fPpeQrkHfuU6S4Hly63GWw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6021.png",
-      lastSeasonStats: {
-        G: 82,
-        Min: "37:01",
-        "FG%": 50.0,
-        "FT%": 81.4,
-        "3PM": 164,
-        "3P%": 35.4,
-        Pts: 1444,
-        Reb: 259,
-        Ast: 306,
-        Stl: 75,
-        Blk: 43,
-        TO: 132,
-        DD: 1,
-        TD: 0,
-      },
-    },
-    "Herbert Jones": {
-      name: "Herbert Jones",
-      team: "New Orleans Pelicans",
-      positions: "SF, PF",
-      number: 2,
-      Rank: 102,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/P2IHIeD.grTLgDPe9IF2hA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6577.png",
-      lastSeasonStats: {
-        G: 20,
-        Min: "32:24",
-        "FG%": 43.6,
-        "FT%": 82.5,
-        "3PM": 22,
-        "3P%": 30.6,
-        Pts: 205,
-        Reb: 78,
-        Ast: 65,
-        Stl: 37,
-        Blk: 9,
-        TO: 35,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Aaron Nesmith": {
-      name: "Aaron Nesmith",
-      team: "Indiana Pacers",
-      positions: "SF",
-      number: 23,
-      Rank: 134,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/8Mr5m66OmgFNbUyXHRaAnQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6406.png",
-      lastSeasonStats: {
-        G: 45,
-        Min: "24:57",
-        "FG%": 50.7,
-        "FT%": 91.3,
-        "3PM": 84,
-        "3P%": 43.1,
-        Pts: 541,
-        Reb: 178,
-        Ast: 54,
-        Stl: 35,
-        Blk: 17,
-        TO: 37,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Bilal Coulibaly": {
-      name: "Bilal Coulibaly",
-      team: "Washington Wizards",
-      positions: "SG, SF",
-      number: 0,
-      Rank: 156,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/V8ZSPTZGpV57k4fzQToGrA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/11012024/10099.png",
-      lastSeasonStats: {
-        G: 59,
-        Min: "33:01",
-        "FG%": 42.1,
-        "FT%": 74.6,
-        "3PM": 63,
-        "3P%": 28.1,
-        Pts: 727,
-        Reb: 294,
-        Ast: 199,
-        Stl: 78,
-        Blk: 41,
-        TO: 125,
-        DD: 3,
-        TD: 1,
-      },
-    },
-    "Luguentz Dort": {
-      name: "Luguentz Dort",
-      team: "Oklahoma City Thunder",
-      positions: "SG, SF",
-      number: 5,
-      Rank: 179,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/aezPDzb5M_..89jebS7yUg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6254.png",
-      lastSeasonStats: {
-        G: 71,
-        Min: "29:12",
-        "FG%": 40.8,
-        "FT%": 71.7,
-        "3PM": 170,
-        "3P%": 41.2,
-        Pts: 719,
-        Reb: 293,
-        Ast: 115,
-        Stl: 79,
-        Blk: 39,
-        TO: 51,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Max Strus": {
-      name: "Max Strus",
-      team: "Cleveland Cavaliers",
-      positions: "SG, SF",
-      number: 1,
-      Rank: 195,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/YKIAmcQEGtMH7h4us1.G5w--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10242024/6267.png",
-      lastSeasonStats: {
-        G: 50,
-        Min: "25:28",
-        "FG%": 44.2,
-        "FT%": 82.4,
-        "3PM": 113,
-        "3P%": 38.6,
-        Pts: 471,
-        Reb: 217,
-        Ast: 158,
-        Stl: 26,
-        Blk: 12,
-        TO: 54,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Jaime Jaquez Jr.": {
-      name: "Jaime Jaquez Jr.",
-      team: "Miami Heat",
-      positions: "SG, SF",
-      number: 11,
-      Rank: 198,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/AeUgs_9uPL1EkV8mecn4gw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10092.png",
-      lastSeasonStats: {
-        G: 66,
-        Min: "20:44",
-        "FG%": 46.1,
-        "FT%": 75.4,
-        "3PM": 37,
-        "3P%": 31.1,
-        Pts: 570,
-        Reb: 290,
-        Ast: 166,
-        Stl: 61,
-        Blk: 14,
-        TO: 98,
-        DD: 3,
-        TD: 1,
       },
     },
   },
   C: {
-    "Nikola Jokić": {
-      name: "Nikola Jokić",
-      team: "Denver Nuggets",
-      positions: "C",
-      number: 15,
-      Rank: 1,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/gABJ8fcfs1PsbnMXySaAsQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10282024/5352.png",
-      lastSeasonStats: {
-        G: 70,
-        Min: "34:11",
-        "FG%": 57.6,
-        "FT%": 80.0,
-        "3PM": 138,
-        "3P%": 41.7,
-        Pts: 2071,
-        Reb: 892,
-        Ast: 716,
-        Stl: 127,
-        Blk: 45,
-        TO: 230,
-        DD: 59,
-        TD: 34,
-      },
-    },
-    "Victor Wembanyama": {
-      name: "Victor Wembanyama",
-      team: "San Antonio Spurs",
-      positions: "C",
-      number: 1,
-      Rank: 2,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/jXu6hmjcQJj7_1FzBVVZ8g--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10094.png",
-      lastSeasonStats: {
-        G: 46,
-        Min: "33:12",
-        "FG%": 47.6,
-        "FT%": 83.6,
-        "3PM": 142,
-        "3P%": 35.2,
-        Pts: 1116,
-        Reb: 506,
-        Ast: 168,
-        Stl: 52,
-        Blk: 176,
-        TO: 149,
-        DD: 28,
-        TD: 1,
-      },
-    },
-    "Alperen Sengun": {
-      name: "Alperen Sengun",
-      team: "Houston Rockets",
-      positions: "C",
-      number: 28,
-      Rank: 22,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/9k68bOcTWDdOpUeZrbnIdA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6558.png",
-      lastSeasonStats: {
-        G: 76,
-        Min: "31:31",
-        "FG%": 49.6,
-        "FT%": 69.2,
-        "3PM": 21,
-        "3P%": 23.3,
-        Pts: 1451,
-        Reb: 786,
-        Ast: 372,
-        Stl: 84,
-        Blk: 61,
-        TO: 194,
-        DD: 45,
-        TD: 4,
-      },
-    },
-    "Bam Adebayo": {
-      name: "Bam Adebayo",
-      team: "Miami Heat",
-      positions: "PF, C",
-      number: 13,
-      Rank: 32,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/aLLZVC9sYWprB9tFeRKbBA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/5827.png",
-      lastSeasonStats: {
-        G: 78,
-        Min: "34:17",
-        "FG%": 48.5,
-        "FT%": 76.5,
-        "3PM": 79,
-        "3P%": 35.7,
-        Pts: 1410,
-        Reb: 749,
-        Ast: 337,
-        Stl: 98,
-        Blk: 53,
-        TO: 161,
-        DD: 38,
-        TD: 1,
-      },
-    },
-    "Ivica Zubac": {
-      name: "Ivica Zubac",
-      team: "Los Angeles Clippers",
-      positions: "C",
-      number: 40,
-      Rank: 35,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/sTVWTobjinRQlvx.aNi4zQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10222024/5663.png",
-      lastSeasonStats: {
-        G: 80,
-        Min: "32:48",
-        "FG%": 62.8,
-        "FT%": 66.1,
-        "3PM": 0,
-        "3P%": 0,
-        Pts: 1340,
-        Reb: 1010,
-        Ast: 214,
-        Stl: 55,
-        Blk: 90,
-        TO: 127,
-        DD: 59,
-        TD: 1,
-      },
-    },
-    "Myles Turner": {
-      name: "Myles Turner",
-      team: "Milwaukee Bucks",
-      positions: "C",
-      number: 3,
-      Rank: 47,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/bTrUtiqUpSMaIDVN4H9tng--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/07072025/5471.png",
-      lastSeasonStats: {
-        G: 72,
-        Min: "30:12",
-        "FG%": 48.1,
-        "FT%": 77.3,
-        "3PM": 156,
-        "3P%": 39.6,
-        Pts: 1120,
-        Reb: 471,
-        Ast: 111,
-        Stl: 54,
-        Blk: 144,
-        TO: 123,
-        DD: 13,
-        TD: 0,
-      },
-    },
     "Jalen Duren": {
       name: "Jalen Duren",
       team: "Detroit Pistons",
       positions: "C",
       number: 0,
-      Rank: 58,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/9_XSkViaPtTKYQlG2BBf2Q--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10282024/6703.png",
-      lastSeasonStats: {
-        G: 78,
-        Min: "26:05",
-        "FG%": 69.2,
-        "FT%": 66.9,
+      Rank: 20,
+      statsTotals: {
+        G: 15,
+        Min: "28:56",
+        "FG%": 67.1,
+        "FT%": 75.7,
         "3PM": 0,
         "3P%": 0,
-        Pts: 918,
-        Reb: 807,
-        Ast: 209,
-        Stl: 54,
-        Blk: 89,
-        TO: 136,
-        DD: 41,
+        Pts: 304,
+        Reb: 173,
+        Ast: 31,
+        Stl: 14,
+        Blk: 14,
+        TO: 36,
+        DD: 9,
         TD: 0,
       },
     },
@@ -1363,153 +357,59 @@ const players = {
       team: "Miami Heat",
       positions: "PF, C",
       number: 7,
-      Rank: 94,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/1ppxkG6sRiD12LNW98mJAg--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10274.png",
-      lastSeasonStats: {
-        G: 64,
-        Min: "22:13",
-        "FG%": 55.4,
-        "FT%": 68.7,
-        "3PM": 35,
-        "3P%": 31.5,
-        Pts: 595,
-        Reb: 473,
-        Ast: 60,
-        Stl: 39,
-        Blk: 71,
-        TO: 57,
-        DD: 15,
-        TD: 0,
-      },
-    },
-    "Dereck Lively II": {
-      name: "Dereck Lively II",
-      team: "Dallas Mavericks",
-      positions: "C",
-      number: 2,
-      Rank: 114,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/5qoi.E304CcBVnKa8uP4aw--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10132023/10097.png",
-      lastSeasonStats: {
-        G: 36,
-        Min: "23:08",
-        "FG%": 72.9,
-        "FT%": 56.5,
-        "3PM": 0,
-        "3P%": 0,
-        Pts: 314,
-        Reb: 270,
-        Ast: 85,
-        Stl: 20,
-        Blk: 56,
-        TO: 41,
+      Rank: 11,
+      statsTotals: {
+        G: 18,
+        Min: "24:57",
+        "FG%": 52.4,
+        "FT%": 79.5,
+        "3PM": 19,
+        "3P%": 40.4,
+        Pts: 224,
+        Reb: 198,
+        Ast: 11,
+        Stl: 18,
+        Blk: 25,
+        TO: 18,
         DD: 8,
-        TD: 0,
-      },
-    },
-    "Yves Missi": {
-      name: "Yves Missi",
-      team: "New Orleans Pelicans",
-      positions: "C",
-      number: 21,
-      Rank: 140,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/mc_x6UAL1tgc.glluqKb1A--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/10289.png",
-      lastSeasonStats: {
-        G: 73,
-        Min: "26:48",
-        "FG%": 54.7,
-        "FT%": 62.3,
-        "3PM": 0,
-        "3P%": 0,
-        Pts: 665,
-        Reb: 601,
-        Ast: 99,
-        Stl: 37,
-        Blk: 98,
-        TO: 82,
-        DD: 14,
-        TD: 0,
-      },
-    },
-    "Daniel Gafford": {
-      name: "Daniel Gafford",
-      team: "Dallas Mavericks",
-      positions: "C",
-      number: 21,
-      Rank: 144,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/fkQZAaN9JYJXMVxygeb6JQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10252024/6226.png",
-      lastSeasonStats: {
-        G: 57,
-        Min: "21:31",
-        "FG%": 70.2,
-        "FT%": 68.9,
-        "3PM": 0,
-        "3P%": 0,
-        Pts: 701,
-        Reb: 388,
-        Ast: 80,
-        Stl: 23,
-        Blk: 102,
-        TO: 66,
-        DD: 8,
-        TD: 0,
-      },
-    },
-    "Al Horford": {
-      name: "Al Horford",
-      team: "Golden State Warriors",
-      positions: "PF, C",
-      number: 20,
-      Rank: 211,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/3XI_N10gbiDwHVfus955yA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10222024/4245.png",
-      lastSeasonStats: {
-        G: 60,
-        Min: "27:38",
-        "FG%": 42.3,
-        "FT%": 89.5,
-        "3PM": 114,
-        "3P%": 36.3,
-        Pts: 538,
-        Reb: 369,
-        Ast: 128,
-        Stl: 36,
-        Blk: 51,
-        TO: 46,
-        DD: 7,
-        TD: 0,
-      },
-    },
-    "Goga Bitadze": {
-      name: "Goga Bitadze",
-      team: "Orlando Magic",
-      positions: "C",
-      number: 35,
-      Rank: 214,
-      photo:
-        "https://s.yimg.com/iu/api/res/1.2/HtviL.zDeoukusQ0NtCpIQ--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xNjA7dz0xNjA-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/10292024/6206.png",
-      lastSeasonStats: {
-        G: 70,
-        Min: "20:26",
-        "FG%": 61.1,
-        "FT%": 63.9,
-        "3PM": 3,
-        "3P%": 10.7,
-        Pts: 502,
-        Reb: 463,
-        Ast: 137,
-        Stl: 49,
-        Blk: 98,
-        TO: 72,
-        DD: 15,
         TD: 0,
       },
     },
   },
 }; // Данные игроков
+for (const position in players) {
+  for (const playerName in players[position]) {
+    const player = players[position][playerName];
+    const statsTotals = player.statsTotals;
+    const games = statsTotals.G;
+
+    const statsAverages = {};
+
+    // Флаг: начали ли мы обрабатывать поля после 3PM
+    let after3PM = false;
+
+    for (const stat in statsTotals) {
+      if (stat === "3PM") {
+        after3PM = true;
+      }
+
+      if (!after3PM) {
+        // Копируем поля до 3PM как есть
+        statsAverages[stat] = statsTotals[stat];
+      } else if (stat === "3P%") {
+        // 3P% копируем без изменений (исключаем из расчёта средних)
+        statsAverages[stat] = statsTotals[stat];
+      } else {
+        // Для 3PM и последующих полей (кроме 3P%): делим на G и фиксируем 1 знак после запятой
+        const totalValue = statsTotals[stat];
+        const averageValue = totalValue / games;
+        statsAverages[stat] = parseFloat(averageValue.toFixed(1));
+      }
+    }
+
+    player.statsAverages = statsAverages;
+  }
+}
 const statisticTitles = {
   Rank: "Rank",
   G: "Games Played",
@@ -1529,28 +429,19 @@ const statisticTitles = {
 }; // Полные наименования аббревиатур статистики
 const clubAbbreviations = {
   "Atlanta Hawks": "ATL",
-  "Boston Celtics": "BOS",
-  "Chicago Bulls": "CHI",
-  "Cleveland Cavaliers": "CLE",
-  "Dallas Mavericks": "DAL",
-  "Denver Nuggets": "DEN",
   "Detroit Pistons": "DET",
-  "Golden State Warriors": "GSW",
-  "Houston Rockets": "HOU",
   "Indiana Pacers": "IND",
-  "Los Angeles Clippers": "LAC",
+  "Memphis Grizzlies": "MEM",
   "Miami Heat": "MIA",
-  "Milwaukee Bucks": "MIL",
   "Minnesota Timberwolves": "MIN",
-  "New Orleans Pelicans": "NOP",
   "New York Knicks": "NYK",
   "Oklahoma City Thunder": "OKC",
   "Orlando Magic": "ORL",
-  "Portland Trail Blazers": "POR",
-  "San Antonio Spurs": "SAS",
-  "Washington Wizards": "WAS",
+  "Philadelphia 76ers": "PHI",
+  "Toronto Raptors": "TOR",
 }; // Аббревиатуры клубов
 const positions = ["PG", "SG", "G", "SF", "PF", "F", "C"]; // Позиции
+const basicLink = "https://shoneal.github.io/fantasy/images/players/";
 
 let isUpdating = false; // Флаг обновления
 let playersCount = 0; // Счетчик игроков
@@ -1678,16 +569,23 @@ function updatePlayersTable() {
     (playerValue, filterValue) => playerValue.includes(filterValue)
   );
 
+  const isAveragesActive =
+    document.querySelector(
+      ".table_output_button.is_average.table_output_button-is_active"
+    ) !== null;
+  const dataSource = isAveragesActive ? "statsAverages" : "statsTotals";
+
   filteredPlayers.sort((a, b) => {
     let valA, valB;
     const activeButton = Array.from(headerButtons).find((btn) =>
       btn.classList.contains("active-button")
     );
-    const sortBy = activeButton?.textContent || "Rank";
+    const sortBy = activeButton?.textContent || "G";
 
-    if (sortBy in a.lastSeasonStats) {
-      valA = a.lastSeasonStats[sortBy];
-      valB = b.lastSeasonStats[sortBy];
+    if (sortBy in a[dataSource]) {
+      valA = a[dataSource][sortBy];
+      valB = b[dataSource][sortBy];
+
       if (sortBy === "Min") {
         const [minA, secA] = valA.split(":").map(Number);
         const [minB, secB] = valB.split(":").map(Number);
@@ -1703,11 +601,12 @@ function updatePlayersTable() {
 
     const isAscending = ["Rank", "TO"].includes(sortBy);
 
-    if (isAscending) {
-      return valA - valB;
-    } else {
-      return valB - valA;
+    if (valA === valB) {
+      const rankA = a.Rank;
+      const rankB = b.Rank;
+      return rankA - rankB;
     }
+    return isAscending ? valA - valB : valB - valA;
   });
 
   playersCount = filteredPlayers.length;
@@ -1715,11 +614,41 @@ function updatePlayersTable() {
 } // Обновление таблицы игроков
 
 const tableBody = document.querySelector(".table_body");
+
+let activePlayerName = null;
+function handleDocumentClick(event) {
+  const target = event.target;
+  const isAllowedElement =
+    target.tagName === "BUTTON" ||
+    target.tagName === "SELECT" ||
+    target.tagName === "OPTION" ||
+    target.tagName === "INPUT";
+
+  if (isAllowedElement) {
+    return;
+  }
+  const isClickOnRow = target.closest(".table_row");
+  if (!isClickOnRow) {
+    document.querySelectorAll(".table_row").forEach((row) => {
+      row.classList.remove("table_row-is_active");
+    });
+    activePlayerName = null;
+  }
+} // Клик по строкам для выделения
 function createTableRow(item) {
   const player = playerRowTemplate.querySelector(".table_row").cloneNode(true);
+  player.dataset.playerName = item.name;
+  player.playerData = item;
+
+  function normalizeString(str) {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-zA-Za-яА-ЯёЁ]/g, "");
+  }
 
   const photo = player.querySelector(".player_photo");
-  photo.src = item.photo;
+  photo.src = `${basicLink}${normalizeString(item.name)}.png`;
   photo.alt = item.name;
   photo.addEventListener("load", () => {
     photo.style.opacity = "1";
@@ -1731,29 +660,91 @@ function createTableRow(item) {
   player.querySelector(".player_club").title = item.team;
   player.querySelector(".player_position").textContent = item.positions;
 
-  Object.entries(statsMap).forEach(([key, statData]) => {
-    const element = player.querySelector(`.${statData.className}`);
+  const statKeys = Object.keys(statsMap);
+  const boundaryIndex = statKeys.indexOf("3PM");
 
-    const value = key === "Rank" ? item.Rank : item.lastSeasonStats[key];
+  player.updateNumbers = () => {
+    const isAveragesActive =
+      document.querySelector(
+        ".table_output_button.is_average.table_output_button-is_active"
+      ) !== null;
 
-    if (key.includes("%")) {
-      let numValue = parseFloat(value);
-      if (numValue >= 1) {
-        numValue /= 100;
+    const dataSource = isAveragesActive ? item.statsAverages : item.statsTotals;
+
+    Object.entries(statsMap).forEach(([key, statData]) => {
+      const cell = player.querySelector(`.${statData.className}`);
+      if (!cell) return;
+
+      let value;
+      let fromAverages = false;
+      let showDecimal = false;
+
+      if (key === "Rank") {
+        value = item.Rank;
+      } else if (dataSource && key in dataSource) {
+        value = dataSource[key];
+        fromAverages = isAveragesActive;
+      } else {
+        value = item[key] || 0;
       }
-      element.textContent = "." + numValue.toFixed(3).replace(/^0\./, "");
-    } else if (typeof value === "number" || !isNaN(value)) {
-      element.textContent = parseInt(value, 10)
-        .toString()
-        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    } else {
-      element.textContent = value;
-    }
 
-    if (element.textContent === "0" || element.textContent === ".000") {
-      element.classList.add("zero-value");
-    }
+      // Форматирование
+      if (key.includes("%")) {
+        let numValue = parseFloat(value);
+        if (numValue >= 1) numValue /= 100;
+        cell.textContent = "." + numValue.toFixed(3).replace(/^0\./, "");
+      } else if (typeof value === "number" || !isNaN(value)) {
+        // Определяем, нужно ли показывать .0
+        const keyIndex = statKeys.indexOf(key);
+        showDecimal = keyIndex >= boundaryIndex && key !== "3P%";
+
+        if (fromAverages && showDecimal) {
+          const formattedValue = parseFloat(value).toFixed(1);
+          const parts = formattedValue.split(".");
+          const integerPart = parseInt(parts[0], 10)
+            .toString()
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          cell.textContent = integerPart + "." + parts[1];
+        } else {
+          const formattedValue = parseInt(value, 10).toString();
+          cell.textContent = formattedValue.replace(
+            /\B(?=(\d{3})+(?!\d))/g,
+            ","
+          );
+        }
+      } else {
+        cell.textContent = value;
+      }
+      cell.classList.toggle(
+        "zero-value",
+        (fromAverages && showDecimal && cell.textContent === "0.0") ||
+          ((!fromAverages || !showDecimal) && cell.textContent === "0") ||
+          cell.textContent === ".000"
+      );
+    });
+  };
+
+  player.updateNumbers();
+
+  if (activePlayerName === item.name) {
+    player.classList.add("table_row-is_active");
+  }
+  const handleRowClick = () => {
+    activePlayerName = item.name;
+    document.querySelectorAll(".table_row").forEach((row) => {
+      row.classList.remove("table_row-is_active");
+    });
+    player.classList.add("table_row-is_active");
+  };
+  const allowedElements = player.querySelectorAll(
+    "button, select, option, input"
+  );
+  allowedElements.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
   });
+  player.addEventListener("click", handleRowClick);
 
   return player;
 } // Создание строки игрока
@@ -1866,3 +857,17 @@ function initializeTable() {
     console.error("Ошибка при инициализации таблицы:", error);
   }
 } // Начальная отрисовка
+
+document.querySelectorAll(".table_output_button").forEach((button) => {
+  button.addEventListener("click", () => {
+    document
+      .querySelectorAll(".table_output_button")
+      .forEach((btn) => btn.classList.remove("table_output_button-is_active"));
+    button.classList.add("table_output_button-is_active");
+    const tableBody = document.querySelector(".table_body");
+    const rows = tableBody.querySelectorAll(".table_row");
+    rows.forEach((row) => row.updateNumbers());
+    updateTable();
+  });
+}); // Клик по кнопкам Averages и Totals
+document.addEventListener("click", handleDocumentClick);

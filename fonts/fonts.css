@@ -30,3 +30,10 @@
   font-weight: 700;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Helvetica Neue Italic";
+  src: url(./HelveticaNeueBlackItalic.otf) format("opentype");
+  font-weight: 900;
+  font-display: swap;
+}
