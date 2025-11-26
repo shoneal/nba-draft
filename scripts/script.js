@@ -729,7 +729,11 @@ function createTableRow(item) {
   if (activePlayerName === item.name) {
     player.classList.add("table_row-is_active");
   }
-  const handleRowClick = () => {
+  const handleRowClick = (e) => {
+    if (e.target.closest("button, select, option, input")) {
+      return;
+    }
+
     activePlayerName = item.name;
     document.querySelectorAll(".table_row").forEach((row) => {
       row.classList.remove("table_row-is_active");
@@ -740,10 +744,11 @@ function createTableRow(item) {
     "button, select, option, input"
   );
   allowedElements.forEach((el) => {
-    el.addEventListener("click", (e) => {
+    el.addEventListener("touchstart", (e) => {
       e.stopPropagation();
     });
   });
+  player.addEventListener("touchstart", handleRowClick);
   player.addEventListener("click", handleRowClick);
 
   return player;

@@ -294,6 +294,11 @@ thead th {
   border-block-end: none;
 }
 
+.table_row {
+  touch-action: manipulation; /* Оптимизирует тач-взаимодействие */
+  -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе */
+}
+
 .table_row:hover,
 .table_row-is_active {
   background: var(--stroke-hover);
