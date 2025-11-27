@@ -1,7 +1,8 @@
 const players = {
   PG: {
     "Trae Young": {
-      name: "Trae Young",
+      firstName: "Trae",
+      lastName: "Young",
       team: "Atlanta Hawks",
       positions: "PG",
       number: 11,
@@ -24,7 +25,8 @@ const players = {
       },
     },
     "Anthony Black": {
-      name: "Anthony Black",
+      firstName: "Anthony",
+      lastName: "Black",
       team: "Orlando Magic",
       positions: "PG, SG",
       number: 0,
@@ -46,56 +48,11 @@ const players = {
         TD: 0,
       },
     },
-    "Miles McBride": {
-      name: "Miles McBride",
-      team: "New York Knicks",
-      positions: "PG, SG",
-      number: 2,
-      Rank: 235,
-      statsTotals: {
-        G: 2,
-        Min: "30:30",
-        "FG%": 40.0,
-        "FT%": 0,
-        "3PM": 8,
-        "3P%": 36.4,
-        Pts: 36,
-        Reb: 4,
-        Ast: 2,
-        Stl: 0,
-        Blk: 2,
-        TO: 1,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Quenton Jackson": {
-      name: "Quenton Jackson",
-      team: "Indiana Pacers",
-      positions: "PG, SG",
-      number: 29,
-      Rank: 266,
-      statsTotals: {
-        G: 1,
-        Min: "20:00",
-        "FG%": 25.0,
-        "FT%": 71.4,
-        "3PM": 0,
-        "3P%": 0,
-        Pts: 7,
-        Reb: 2,
-        Ast: 4,
-        Stl: 0,
-        Blk: 0,
-        TO: 1,
-        DD: 0,
-        TD: 0,
-      },
-    },
   },
   SG: {
     "N. Alexander-Walker": {
-      name: "N. Alexander-Walker",
+      firstName: "N.",
+      lastName: "Alexander-Walker",
       team: "Atlanta Hawks",
       positions: "PG, SG, SF",
       number: 7,
@@ -118,7 +75,8 @@ const players = {
       },
     },
     "Donte DiVincenzo": {
-      name: "Donte DiVincenzo",
+      firstName: "Donte",
+      lastName: "DiVincenzo",
       team: "Minnesota Timberwolves",
       positions: "PG, SG",
       number: 0,
@@ -141,7 +99,8 @@ const players = {
       },
     },
     "VJ Edgecombe": {
-      name: "VJ Edgecombe",
+      firstName: "VJ",
+      lastName: "Edgecombe",
       team: "Philadelphia 76ers",
       positions: "PG, SG",
       number: 77,
@@ -164,7 +123,8 @@ const players = {
       },
     },
     "Gradey Dick": {
-      name: "Gradey Dick",
+      firstName: "Gradey",
+      lastName: "Dick",
       team: "Toronto Raptors",
       positions: "SG, SF",
       number: 1,
@@ -187,7 +147,8 @@ const players = {
       },
     },
     "Isaiah Joe": {
-      name: "Isaiah Joe",
+      firstName: "Isaiah",
+      lastName: "Joe",
       team: "Oklahoma City Thunder",
       positions: "SG",
       number: 11,
@@ -209,80 +170,12 @@ const players = {
         TD: 0,
       },
     },
-    "Cam Spencer": {
-      name: "Cam Spencer",
-      team: "Memphis Grizzlies",
-      positions: "SG",
-      number: 24,
-      Rank: 106,
-      statsTotals: {
-        G: 3,
-        Min: "22:40",
-        "FG%": 35.3,
-        "FT%": 80.0,
-        "3PM": 3,
-        "3P%": 37.5,
-        Pts: 19,
-        Reb: 5,
-        Ast: 10,
-        Stl: 2,
-        Blk: 1,
-        TO: 0,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Caris LeVert": {
-      name: "Caris LeVert",
-      team: "Detroit Pistons",
-      positions: "SG, SF",
-      number: 8,
-      Rank: 255,
-      statsTotals: {
-        G: 2,
-        Min: "15:00",
-        "FG%": 42.9,
-        "FT%": 0,
-        "3PM": 1,
-        "3P%": 16.7,
-        Pts: 13,
-        Reb: 5,
-        Ast: 9,
-        Stl: 1,
-        Blk: 0,
-        TO: 4,
-        DD: 0,
-        TD: 0,
-      },
-    },
-    "Javonte Green": {
-      name: "Javonte Green",
-      team: "Detroit Pistons",
-      positions: "SG, SF",
-      number: 31,
-      Rank: 193,
-      statsTotals: {
-        G: 3,
-        Min: "23:00",
-        "FG%": 68.4,
-        "FT%": 100.0,
-        "3PM": 3,
-        "3P%": 37.5,
-        Pts: 36,
-        Reb: 8,
-        Ast: 1,
-        Stl: 4,
-        Blk: 0,
-        TO: 3,
-        DD: 0,
-        TD: 0,
-      },
-    },
   },
   PF: {},
   SF: {
     "Jalen Johnson": {
-      name: "Jalen Johnson",
+      firstName: "Jalen",
+      lastName: "Johnson",
       team: "Atlanta Hawks",
       positions: "SF, PF",
       number: 1,
@@ -305,7 +198,8 @@ const players = {
       },
     },
     "Ausar Thompson": {
-      name: "Ausar Thompson",
+      firstName: "Ausar",
+      lastName: "Thompson",
       team: "Detroit Pistons",
       positions: "SG, SF, PF",
       number: 9,
@@ -330,7 +224,8 @@ const players = {
   },
   C: {
     "Jalen Duren": {
-      name: "Jalen Duren",
+      firstName: "Jalen",
+      lastName: "Duren",
       team: "Detroit Pistons",
       positions: "C",
       number: 0,
@@ -353,7 +248,8 @@ const players = {
       },
     },
     "Kel'el Ware": {
-      name: "Kel'el Ware",
+      firstName: "Kel'el",
+      lastName: "Ware",
       team: "Miami Heat",
       positions: "PF, C",
       number: 7,
@@ -377,15 +273,13 @@ const players = {
     },
   },
 }; // Данные игроков
-for (const position in players) {
-  for (const playerName in players[position]) {
-    const player = players[position][playerName];
-    const statsTotals = player.statsTotals;
+for (const pos in players) {
+  for (const name in players[pos]) {
+    const player = players[pos][name];
+    const { statsTotals } = player;
     const games = statsTotals.G;
-
     const statsAverages = {};
 
-    // Флаг: начали ли мы обрабатывать поля после 3PM
     let after3PM = false;
 
     for (const stat in statsTotals) {
@@ -393,23 +287,18 @@ for (const position in players) {
         after3PM = true;
       }
 
-      if (!after3PM) {
-        // Копируем поля до 3PM как есть
-        statsAverages[stat] = statsTotals[stat];
-      } else if (stat === "3P%") {
-        // 3P% копируем без изменений (исключаем из расчёта средних)
+      if (!after3PM || stat === "3P%") {
         statsAverages[stat] = statsTotals[stat];
       } else {
-        // Для 3PM и последующих полей (кроме 3P%): делим на G и фиксируем 1 знак после запятой
-        const totalValue = statsTotals[stat];
-        const averageValue = totalValue / games;
-        statsAverages[stat] = parseFloat(averageValue.toFixed(1));
+        statsAverages[stat] = parseFloat(
+          (statsTotals[stat] / games).toFixed(1)
+        );
       }
     }
 
     player.statsAverages = statsAverages;
   }
-}
+} // Добавление средних показателей
 const statisticTitles = {
   Rank: "Rank",
   G: "Games Played",
@@ -430,11 +319,8 @@ const statisticTitles = {
 const clubAbbreviations = {
   "Atlanta Hawks": "ATL",
   "Detroit Pistons": "DET",
-  "Indiana Pacers": "IND",
-  "Memphis Grizzlies": "MEM",
   "Miami Heat": "MIA",
   "Minnesota Timberwolves": "MIN",
-  "New York Knicks": "NYK",
   "Oklahoma City Thunder": "OKC",
   "Orlando Magic": "ORL",
   "Philadelphia 76ers": "PHI",
@@ -483,20 +369,18 @@ fillTeams(selectTeams, clubAbbreviations); // Команды в select
 fillPositions(selectPositions, positions); // Позиции в select
 
 const secondLine = document.querySelector(".second_line");
-const tableHeaderTemplate = document.querySelector("#table_header").content;
-function createTableHeaderRow(key, title) {
-  const row = tableHeaderTemplate
-    .querySelector(".table_header_row")
-    .cloneNode(true);
-  const button = row.querySelector(".table_header_button");
-
-  button.textContent = key;
-  row.title = title;
-
-  return row;
-}
 Object.entries(statisticTitles).forEach(([key, title]) => {
-  secondLine.append(createTableHeaderRow(key, title));
+  const th = document.createElement("th");
+  th.className = "table_header_row has-button";
+  th.title = title;
+  const wrapper = document.createElement("div");
+  wrapper.className = "table_header_wrapper";
+  const btn = document.createElement("button");
+  btn.className = "table_header_button";
+  btn.textContent = key;
+  wrapper.append(btn);
+  th.append(wrapper);
+  secondLine.append(th);
 }); // Создание кнопок в шапке таблицы
 
 const playerRowTemplate = document.querySelector("#player_row").content;
@@ -547,8 +431,10 @@ function updatePlayersTable() {
   let filteredPlayers = flatArray;
 
   if (searchValue) {
-    filteredPlayers = filteredPlayers.filter((player) =>
-      normalizeString(player.name).includes(searchValue)
+    filteredPlayers = filteredPlayers.filter(
+      (player) =>
+        normalizeString(player.firstName).includes(searchValue) ||
+        normalizeString(player.lastName).includes(searchValue)
     );
   }
 
@@ -614,31 +500,63 @@ function updatePlayersTable() {
 } // Обновление таблицы игроков
 
 const tableBody = document.querySelector(".table_body");
-
 let activePlayerName = null;
-function handleDocumentClick(event) {
-  const target = event.target;
-  const isAllowedElement =
-    target.tagName === "BUTTON" ||
-    target.tagName === "SELECT" ||
-    target.tagName === "OPTION" ||
-    target.tagName === "INPUT";
+function updateNumbers(row) {
+  const item = row.playerData;
+  const isAveragesActive = !!document.querySelector(
+    ".table_output_button.is_average.table_output_button-is_active"
+  );
+  const dataSource = isAveragesActive ? item.statsAverages : item.statsTotals;
 
-  if (isAllowedElement) {
-    return;
-  }
-  const isClickOnRow = target.closest(".table_row");
-  if (!isClickOnRow) {
-    document.querySelectorAll(".table_row").forEach((row) => {
-      row.classList.remove("table_row-is_active");
-    });
-    activePlayerName = null;
-  }
-} // Клик по строкам для выделения
+  const statKeys = Object.keys(statsMap);
+  const boundaryIndex = statKeys.indexOf("3PM");
+
+  Object.entries(statsMap).forEach(([key, statData]) => {
+    const cell = row.querySelector(`.${statData.className}`);
+    if (!cell) return;
+
+    let value =
+      key === "Rank"
+        ? item.Rank
+        : dataSource && key in dataSource
+        ? dataSource[key]
+        : item[key] || 0;
+
+    const fromAverages = isAveragesActive;
+    const showDecimal = statKeys.indexOf(key) >= boundaryIndex && key !== "3P%";
+
+    if (key.includes("%")) {
+      let numValue = parseFloat(value);
+      if (numValue >= 1) numValue /= 100;
+      cell.textContent = "." + numValue.toFixed(3).replace(/^0\./, "");
+    } else if (typeof value === "number" || !isNaN(value)) {
+      const formatted =
+        fromAverages && showDecimal
+          ? parseFloat(value).toFixed(1)
+          : parseInt(value, 10).toString();
+
+      cell.textContent = formatted.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    } else {
+      cell.textContent = value;
+    }
+
+    cell.classList.toggle(
+      "zero-value",
+      (fromAverages && showDecimal && cell.textContent === "0.0") ||
+        ((!fromAverages || !showDecimal) && cell.textContent === "0") ||
+        cell.textContent === ".000"
+    );
+  });
+}
 function createTableRow(item) {
   const player = playerRowTemplate.querySelector(".table_row").cloneNode(true);
   player.dataset.playerName = item.name;
   player.playerData = item;
+
+  const photo = player.querySelector(".player_photo");
+  photo.src = `${basicLink}${normalizeString(item.name)}.png`;
+  photo.alt = item.name;
+  photo.addEventListener("load", () => (photo.style.opacity = "1"));
 
   function normalizeString(str) {
     return str
@@ -647,104 +565,51 @@ function createTableRow(item) {
       .replace(/[^a-zA-Za-яА-ЯёЁ]/g, "");
   }
 
-  const photo = player.querySelector(".player_photo");
-  photo.src = `${basicLink}${normalizeString(item.name)}.png`;
-  photo.alt = item.name;
-  photo.addEventListener("load", () => {
-    photo.style.opacity = "1";
-  });
+  function formatFirstName(firstName) {
+    if (/^[A-Z]{2,}$/.test(firstName) || firstName.includes(".")) {
+      return firstName;
+    }
+    return firstName[0] + ".";
+  }
 
-  player.querySelector(".player_name").textContent = item.name;
+  function updateNameDisplay() {
+    player.querySelector(".player_firstName").textContent =
+      window.innerWidth < 768
+        ? formatFirstName(item.firstName)
+        : item.firstName;
+  }
+  updateNameDisplay();
+  window.addEventListener("resize", updateNameDisplay);
+
+  player.querySelector(".player_lastName").textContent = item.lastName;
   player.querySelector(".player_club").textContent =
     clubAbbreviations[item.team];
   player.querySelector(".player_club").title = item.team;
   player.querySelector(".player_position").textContent = item.positions;
 
-  const statKeys = Object.keys(statsMap);
-  const boundaryIndex = statKeys.indexOf("3PM");
-
-  player.updateNumbers = () => {
-    const isAveragesActive =
-      document.querySelector(
-        ".table_output_button.is_average.table_output_button-is_active"
-      ) !== null;
-
-    const dataSource = isAveragesActive ? item.statsAverages : item.statsTotals;
-
-    Object.entries(statsMap).forEach(([key, statData]) => {
-      const cell = player.querySelector(`.${statData.className}`);
-      if (!cell) return;
-
-      let value;
-      let fromAverages = false;
-      let showDecimal = false;
-
-      if (key === "Rank") {
-        value = item.Rank;
-      } else if (dataSource && key in dataSource) {
-        value = dataSource[key];
-        fromAverages = isAveragesActive;
-      } else {
-        value = item[key] || 0;
-      }
-
-      // Форматирование
-      if (key.includes("%")) {
-        let numValue = parseFloat(value);
-        if (numValue >= 1) numValue /= 100;
-        cell.textContent = "." + numValue.toFixed(3).replace(/^0\./, "");
-      } else if (typeof value === "number" || !isNaN(value)) {
-        // Определяем, нужно ли показывать .0
-        const keyIndex = statKeys.indexOf(key);
-        showDecimal = keyIndex >= boundaryIndex && key !== "3P%";
-
-        if (fromAverages && showDecimal) {
-          const formattedValue = parseFloat(value).toFixed(1);
-          const parts = formattedValue.split(".");
-          const integerPart = parseInt(parts[0], 10)
-            .toString()
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-          cell.textContent = integerPart + "." + parts[1];
-        } else {
-          const formattedValue = parseInt(value, 10).toString();
-          cell.textContent = formattedValue.replace(
-            /\B(?=(\d{3})+(?!\d))/g,
-            ","
-          );
-        }
-      } else {
-        cell.textContent = value;
-      }
-      cell.classList.toggle(
-        "zero-value",
-        (fromAverages && showDecimal && cell.textContent === "0.0") ||
-          ((!fromAverages || !showDecimal) && cell.textContent === "0") ||
-          cell.textContent === ".000"
-      );
-    });
-  };
-
-  player.updateNumbers();
-
   if (activePlayerName === item.name) {
     player.classList.add("table_row-is_active");
   }
-  const handleRowClick = () => {
+  const handleClick = () => {
     activePlayerName = item.name;
-    document.querySelectorAll(".table_row").forEach((row) => {
-      row.classList.remove("table_row-is_active");
-    });
+    document
+      .querySelectorAll(".table_row")
+      .forEach((row) => row.classList.remove("table_row-is_active"));
     player.classList.add("table_row-is_active");
+    if (window.innerWidth < 768) {
+      const nextRow = player.nextElementSibling;
+      if (nextRow) {
+        nextRow.classList.add("table_row-is_active");
+      }
+    }
   };
-  const allowedElements = player.querySelectorAll(
-    "button, select, option, input"
-  );
-  allowedElements.forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.stopPropagation();
-    });
-  });
-  player.addEventListener("click", handleRowClick);
+
+  player.addEventListener("click", handleClick);
+  player
+    .querySelectorAll("button, select, option, input")
+    .forEach((el) => el.addEventListener("click", (e) => e.stopPropagation()));
+
+  updateNumbers(player);
 
   return player;
 } // Создание строки игрока
@@ -788,6 +653,7 @@ async function updateTable() {
     sortedPlayers.forEach((player) => {
       tableBody.append(createTableRow(player));
     });
+    setupResponsiveTable();
 
     document.querySelector(".counting_rows").style.display = "flex";
 
@@ -849,6 +715,7 @@ function initializeTable() {
     sortedPlayers.forEach((player) => {
       tableBody.append(createTableRow(player));
     });
+    setupResponsiveTable();
 
     document.querySelector(".counting_rows").style.display = "flex";
 
@@ -858,16 +725,93 @@ function initializeTable() {
   }
 } // Начальная отрисовка
 
-document.querySelectorAll(".table_output_button").forEach((button) => {
+const switchingStatisticsButtons = document.querySelectorAll(
+  ".table_output_button"
+);
+switchingStatisticsButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    document
-      .querySelectorAll(".table_output_button")
-      .forEach((btn) => btn.classList.remove("table_output_button-is_active"));
+    switchingStatisticsButtons.forEach((btn) =>
+      btn.classList.remove("table_output_button-is_active")
+    );
     button.classList.add("table_output_button-is_active");
-    const tableBody = document.querySelector(".table_body");
-    const rows = tableBody.querySelectorAll(".table_row");
-    rows.forEach((row) => row.updateNumbers());
-    updateTable();
+    headerButtons.forEach((headerBtn) => {
+      headerBtn.classList.remove("active-button");
+      headerBtn.disabled = false;
+    });
+    tableBody.querySelectorAll(".table_row").forEach(updateNumbers);
   });
-}); // Клик по кнопкам Averages и Totals
+});
+// Клик по кнопкам Averages и Totals
+
+function handleDocumentClick(event) {
+  const target = event.target;
+  if (["BUTTON", "SELECT", "OPTION", "INPUT"].includes(target.tagName)) {
+    return;
+  }
+
+  if (!target.closest(".table_row")) {
+    document
+      .querySelectorAll(".table_row")
+      .forEach((row) => row.classList.remove("table_row-is_active"));
+    activePlayerName = null;
+  }
+} // Снятие активной строки в таблице
 document.addEventListener("click", handleDocumentClick);
+
+function setupResponsiveTable() {
+  const container =
+    document.querySelector("table tbody") || document.querySelector("table");
+  if (!container) return;
+
+  const update = () => {
+    const mobile = window.innerWidth < 768;
+
+    container
+      .querySelectorAll(".table_row:not(.table_row-stats)")
+      .forEach((row) => {
+        const firstTd = row.firstElementChild;
+        if (!firstTd) return;
+
+        if (mobile) {
+          let statsRow = row.nextElementSibling;
+          if (!statsRow || !statsRow.classList.contains("table_row-stats")) {
+            statsRow = document.createElement("tr");
+            statsRow.className = "table_row table_row-stats";
+
+            [...row.children]
+              .slice(1)
+              .forEach((td) => statsRow.appendChild(td));
+            container.insertBefore(statsRow, row.nextSibling);
+            statsRow.playerData = row.playerData;
+          }
+
+          firstTd.colSpan = 15;
+          firstTd.classList.add("table_cell-mobile-first");
+          statsRow.classList.toggle(
+            "table_row-is_active",
+            row.classList.contains("table_row-is_active")
+          );
+        } else {
+          const statsRow = row.nextElementSibling;
+          if (statsRow && statsRow.classList.contains("table_row-stats")) {
+            [...statsRow.children].forEach((td) => row.appendChild(td));
+            statsRow.remove();
+          }
+          firstTd.colSpan = 1;
+          firstTd.classList.remove("table_cell-mobile-first");
+        }
+      });
+  };
+
+  update();
+  let timer;
+  window.addEventListener("resize", () => {
+    clearTimeout(timer);
+    timer = setTimeout(update, 100);
+  });
+
+  new MutationObserver(update).observe(container, {
+    childList: true,
+    subtree: true,
+  });
+}

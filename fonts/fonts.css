@@ -37,3 +37,10 @@
   font-weight: 900;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Helvetica Neue Condensed";
+  src: url(./helvetica-neue-lt-pro-77-bold-condensed.otf) format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}

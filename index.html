@@ -234,13 +234,6 @@
       <p class="counting_rows"></p>
     </main>
     <footer></footer>
-    <template id="table_header">
-      <th class="table_header_row has-button">
-        <div class="table_header_wrapper">
-          <button class="table_header_button"></button>
-        </div>
-      </th>
-    </template>
     <template id="player_row">
       <tr class="table_row">
         <td>
@@ -249,10 +242,12 @@
               <img class="player_photo" src="" alt="" />
             </div>
             <div class="player_head_right">
-              <p class="player_name"></p>
+              <p class="player_name">
+                <span class="player_firstName"></span>
+                <span class="player_lastName"></span>
+              </p>
               <p class="player_head_down">
-                <span class="player_club"></span>
-                <span> - </span>
+                <span class="player_club"></span> -
                 <span class="player_position"></span>
               </p>
             </div>
