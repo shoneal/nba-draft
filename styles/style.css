@@ -294,12 +294,6 @@ thead th {
   border-block-end: none;
 }
 
-.table_row {
-  touch-action: manipulation; /* Оптимизирует тач-взаимодействие */
-  -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе */
-}
-
-.table_row:hover,
 .table_row-is_active {
   background: var(--stroke-hover);
 }
@@ -447,6 +441,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .table_row:hover {
+    background: var(--stroke-hover);
+  }
+}
+
 @media screen and (max-width: 1439px) {
   :root {
     --main-padding: 56px;
@@ -511,13 +511,5 @@ footer {
 
   .search_input {
     inline-size: 150px;
-  }
-
-  .table_row:hover {
-    background: transparent;
-  }
-
-  .table_row-is_active {
-    background: var(--stroke-hover);
   }
 }
