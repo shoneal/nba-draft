@@ -236,11 +236,6 @@ body {
   border-collapse: collapse;
 }
 
-thead tr {
-  font-weight: 500;
-  background-color: var(--input-background);
-}
-
 th,
 td {
   border: 1px solid var(--line);
@@ -249,6 +244,14 @@ td {
   font-size: 14px;
   line-height: 17px;
   white-space: nowrap;
+}
+
+thead tr {
+  background-color: var(--input-background);
+}
+
+thead tr:first-child th {
+  font-weight: 500;
 }
 
 .second_line th {
@@ -385,14 +388,6 @@ thead th {
   block-size: 30px;
 }
 
-footer {
-  display: block;
-  display: block;
-  margin: 16px auto 0;
-  border-block-start: 1px solid var(--line);
-  inline-size: calc(100% - 32px);
-}
-
 .active-button {
   border: 1px solid var(--inactive-button);
   background-color: var(--inactive-button);
@@ -479,6 +474,12 @@ footer {
     grid-row: 2 / 3;
     justify-self: start;
   }
+
+  th,
+  td {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -505,8 +506,8 @@ footer {
   .profile_name {
     align-self: end;
     font-family: "Helvetica Neue Italic", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 20px;
     font-style: italic;
     line-height: 1.5;
     text-transform: uppercase;
@@ -540,6 +541,7 @@ footer {
   td {
     border: none;
     border-block-end: 1px solid var(--line);
+    font-weight: 500;
   }
 
   thead tr:first-child,
@@ -547,9 +549,17 @@ footer {
     display: none;
   }
 
+  .second_line th {
+    border: none;
+  }
+
   .table_cell-mobile-first {
     border: none;
     padding-block-end: 0;
+  }
+
+  .table_row:last-child td {
+    border-block-end: 1px solid var(--line);
   }
 
   .player_head {
@@ -567,6 +577,12 @@ footer {
   .player_name {
     font-family: "Helvetica Neue Condensed", sans-serif;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
+  }
+
+  .player_rank {
+    color: var(--zero);
   }
 }
