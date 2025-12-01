@@ -33,8 +33,8 @@
 
 @font-face {
   font-family: "Helvetica Neue Italic";
-  src: url(./helvetica-neue-lt-std-77-bold-condensed-oblique.otf) format("opentype");
-  font-weight: 700;
+  src: url(./helvetica-neue-black-condensed.ttf) format("truetype");
+  font-weight: 900;
   font-display: swap;
 }
 
