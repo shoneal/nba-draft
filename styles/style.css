@@ -507,9 +507,9 @@ thead th {
     align-self: end;
     font-family: "Helvetica Neue Italic", sans-serif;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 24px;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 28px;
     text-transform: uppercase;
     white-space: nowrap;
   }
