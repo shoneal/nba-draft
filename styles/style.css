@@ -7,7 +7,7 @@
   --subtext: #5b636a;
   --zero: #b0b9c1;
   --inactive-button: #e0e4e9;
-  --stroke-hover: #e6edf880;
+  --stroke-hover: #d8f1ff;
 }
 
 @media (prefers-color-scheme: dark), .dark-theme {
@@ -17,7 +17,7 @@
     --input-background: #1f2123;
     --subtext: #a0a9b0;
     --inactive-button: #2d3034;
-    --stroke-hover: #1b1e22;
+    --stroke-hover: #152c36;
   }
 }
 
@@ -126,6 +126,7 @@ body {
   line-height: 20px;
   background-color: var(--input-background);
   block-size: 36px;
+  max-inline-size: 232px;
 }
 
 .search_input:focus {
@@ -148,14 +149,16 @@ body {
   box-shadow: none;
 }
 
+.selections {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .filter {
   position: relative;
   font-size: 14px;
   min-inline-size: 100px;
-}
-
-.filter_teams {
-  margin-left: auto;
 }
 
 .filter_header {
@@ -167,6 +170,10 @@ body {
   border-radius: 14px;
   padding: 5px 12px;
   font-weight: 500;
+}
+
+.filter_title {
+  white-space: nowrap;
 }
 
 .select {
@@ -300,6 +307,10 @@ thead th {
 
 .table_row:last-child td {
   border-block-end: none;
+}
+
+.my_team_player {
+  background: var(--input-background);
 }
 
 .table_row-is_active {
@@ -522,12 +533,12 @@ thead th {
     line-height: 20px;
   }
 
-  .filters {
-    column-gap: 10px;
+  .search_input {
+    max-inline-size: 150px;
   }
 
-  .search_input {
-    inline-size: 150px;
+  .selections {
+    column-gap: 10px;
   }
 
   .main {

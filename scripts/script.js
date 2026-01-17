@@ -3,26 +3,27 @@ const players = {
     "Trae Young": {
       firstName: "Trae",
       lastName: "Young",
-      team: "Atlanta Hawks",
+      team: "Washington Wizards",
       positions: "PG",
-      Rank: 279,
+      Rank: 313,
       stats: {
         "22 окт.": [34, 5, 14, 11, 13, 1, 7, 22, 1, 5, 1, 0, 2, 0, 0],
         "24 окт.": [34, 7, 18, 10, 12, 1, 6, 25, 1, 6, 3, 0, 1, 0, 0],
         "25 окт.": [30, 5, 12, 3, 4, 2, 3, 15, 4, 10, 0, 0, 5, 1, 0],
         "27 окт.": [34, 7, 22, 6, 7, 1, 10, 21, 3, 17, 0, 0, 1, 1, 0],
         "29 окт.": [7, 2, 4, 2, 3, 0, 0, 6, 1, 1, 0, 1, 1, 0, 0],
+        "21 дек.": [26, 10, 16, 8, 9, 7, 9, 35, 1, 9, 0, 0, 2, 0, 0],
         "23 дек.": [31, 7, 16, 7, 9, 1, 7, 22, 1, 15, 2, 0, 1, 1, 0],
-        "23 дек.": [32, 8, 16, 9, 9, 5, 8, 30, 2, 6, 1, 0, 4, 0, 0],
-        "23 дек.": [31, 2, 9, 5, 5, 0, 4, 9, 0, 10, 2, 0, 6, 0, 0],
+        "26 дек.": [32, 8, 16, 9, 9, 5, 8, 30, 2, 6, 1, 0, 4, 0, 0],
       },
     },
     "Anthony Black": {
       firstName: "Anthony",
       lastName: "Black",
       team: "Orlando Magic",
-      positions: "PG, SG",
-      Rank: 126,
+      positions: "PG, SG, SF",
+      Rank: 95,
+      myTeam: true,
       stats: {
         "22 окт.": [23, 3, 9, 0, 0, 1, 2, 7, 3, 3, 0, 1, 0, 0, 0],
         "24 окт.": [21, 3, 4, 2, 5, 0, 0, 8, 3, 2, 1, 0, 4, 0, 0],
@@ -56,6 +57,15 @@ const players = {
         "23 дек.": [33, 8, 21, 2, 3, 4, 8, 22, 7, 6, 2, 0, 3, 0, 0],
         "26 дек.": [36, 8, 17, 4, 4, 4, 7, 24, 3, 4, 2, 1, 2, 0, 0],
         "27 дек.": [30, 14, 24, 3, 6, 7, 11, 38, 6, 5, 2, 0, 1, 0, 0],
+        "29 дек.": [32, 9, 19, 7, 7, 2, 7, 27, 3, 3, 1, 0, 4, 0, 0],
+        "31 дек.": [31, 6, 11, 3, 3, 0, 3, 15, 4, 5, 2, 1, 4, 0, 0],
+        "2 янв.": [33, 8, 16, 0, 0, 2, 5, 18, 2, 7, 2, 1, 3, 0, 0],
+        "4 янв.": [36, 8, 16, 8, 10, 3, 7, 27, 3, 10, 1, 4, 1, 1, 0],
+        "6 янв.": [20, 3, 10, 0, 0, 0, 5, 6, 5, 4, 0, 1, 4, 0, 0],
+        "7 янв.": [37, 2, 11, 0, 0, 1, 4, 5, 4, 6, 2, 0, 4, 0, 0],
+        "9 янв.": [37, 7, 12, 4, 4, 3, 7, 21, 3, 4, 0, 0, 4, 0, 0],
+        "11 янв.": [36, 9, 10, 5, 7, 3, 4, 26, 5, 7, 3, 0, 4, 0, 0],
+        "15 янв.": [36, 7, 13, 3, 3, 4, 7, 21, 6, 7, 1, 0, 1, 0, 0],
       },
     },
   },
@@ -65,7 +75,8 @@ const players = {
       lastName: "Alexander-Walker",
       team: "Atlanta Hawks",
       positions: "PG, SG, SF",
-      Rank: 58,
+      Rank: 48,
+      myTeam: true,
       stats: {
         "22 окт.": [28, 2, 15, 5, 6, 1, 5, 10, 4, 4, 1, 1, 1, 0, 0],
         "24 окт.": [31, 8, 18, 2, 2, 1, 10, 19, 1, 4, 1, 0, 1, 0, 0],
@@ -98,6 +109,16 @@ const players = {
         "23 дек.": [34, 9, 19, 1, 2, 2, 8, 21, 1, 2, 2, 0, 0, 0, 0],
         "26 дек.": [32, 6, 14, 1, 1, 2, 5, 15, 4, 3, 1, 1, 2, 0, 0],
         "27 дек.": [30, 8, 18, 4, 4, 5, 12, 25, 0, 1, 1, 0, 0, 0, 0],
+        "29 дек.": [40, 11, 24, 2, 3, 6, 14, 30, 4, 5, 2, 1, 1, 0, 0],
+        "31 дек.": [31, 4, 12, 0, 0, 3, 7, 11, 0, 3, 0, 0, 2, 0, 0],
+        "2 янв.": [34, 9, 20, 2, 4, 3, 10, 23, 4, 3, 2, 0, 1, 0, 0],
+        "3 янв.": [36, 10, 19, 5, 5, 6, 11, 31, 4, 3, 2, 0, 6, 0, 0],
+        "5 янв.": [34, 4, 14, 4, 4, 2, 6, 14, 5, 4, 0, 0, 3, 0, 0],
+        "7 янв.": [34, 6, 18, 3, 3, 2, 12, 17, 6, 6, 3, 2, 1, 0, 0],
+        "9 янв.": [33, 9, 21, 1, 1, 3, 11, 22, 8, 3, 2, 0, 1, 0, 0],
+        "11 янв.": [34, 9, 18, 3, 3, 3, 7, 24, 2, 2, 3, 0, 1, 0, 0],
+        "13 янв.": [33, 10, 16, 1, 1, 5, 9, 26, 4, 3, 0, 0, 0, 0, 0],
+        "15 янв.": [29, 2, 6, 5, 6, 2, 4, 11, 6, 7, 1, 0, 3, 0, 0],
       },
     },
     "Donte DiVincenzo": {
@@ -106,6 +127,7 @@ const players = {
       team: "Minnesota Timberwolves",
       positions: "PG, SG",
       Rank: 54,
+      myTeam: true,
       stats: {
         "22 окт.": [20, 3, 6, 0, 0, 1, 3, 7, 4, 2, 2, 2, 6, 0, 0],
         "24 окт.": [28, 4, 8, 2, 3, 3, 7, 13, 0, 4, 2, 0, 0, 0, 0],
@@ -139,6 +161,15 @@ const players = {
         "23 дек.": [32, 3, 9, 2, 4, 3, 7, 11, 2, 8, 2, 0, 1, 0, 0],
         "25 дек.": [34, 2, 11, 2, 2, 0, 7, 6, 8, 8, 2, 1, 0, 0, 0],
         "27 дек.": [32, 4, 7, 0, 0, 3, 6, 11, 5, 6, 2, 0, 1, 0, 0],
+        "29 дек.": [27, 4, 10, 0, 0, 4, 9, 12, 6, 3, 0, 0, 0, 0, 0],
+        "31 дек.": [26, 2, 8, 0, 0, 2, 6, 6, 2, 7, 1, 0, 1, 0, 0],
+        "3 янв.": [31, 5, 13, 0, 0, 1, 8, 11, 8, 4, 2, 1, 2, 0, 0],
+        "4 янв.": [23, 2, 10, 0, 0, 1, 9, 5, 4, 3, 3, 0, 1, 0, 0],
+        "6 янв.": [31, 4, 9, 0, 0, 4, 9, 12, 5, 2, 0, 1, 0, 0, 0],
+        "8 янв.": [34, 8, 13, 0, 0, 6, 10, 22, 1, 4, 1, 0, 1, 0, 0],
+        "10 янв.": [34, 6, 9, 0, 0, 3, 6, 15, 3, 6, 2, 0, 4, 0, 0],
+        "11 янв.": [38, 7, 16, 0, 0, 5, 12, 19, 9, 7, 3, 1, 2, 0, 0],
+        "13 янв.": [30, 4, 6, 0, 0, 3, 5, 11, 4, 7, 0, 0, 2, 0, 0],
       },
     },
     "VJ Edgecombe": {
@@ -146,7 +177,8 @@ const players = {
       lastName: "Edgecombe",
       team: "Philadelphia 76ers",
       positions: "PG, SG",
-      Rank: 113,
+      Rank: 77,
+      myTeam: true,
       stats: {
         "22 окт.": [42, 13, 26, 3, 6, 5, 13, 34, 7, 3, 1, 0, 2, 0, 0],
         "25 окт.": [40, 6, 15, 2, 2, 1, 3, 15, 6, 8, 3, 1, 2, 0, 0],
@@ -174,6 +206,30 @@ const players = {
         "20 дек.": [35, 10, 21, 3, 3, 3, 11, 26, 6, 4, 0, 0, 2, 0, 0],
         "26 дек.": [33, 4, 13, 2, 2, 0, 5, 10, 7, 3, 1, 0, 1, 0, 0],
         "28 дек.": [34, 3, 16, 2, 4, 2, 7, 10, 2, 5, 0, 0, 2, 0, 0],
+        "30 дек.": [41, 10, 21, 0, 0, 5, 10, 25, 6, 4, 4, 1, 1, 0, 0],
+        "1 янв.": [40, 9, 14, 2, 3, 3, 6, 23, 5, 2, 4, 1, 0, 0, 0],
+        "3 янв.": [41, 10, 16, 2, 2, 4, 9, 26, 2, 4, 2, 2, 2, 0, 0],
+        "5 янв.": [42, 6, 17, 0, 0, 5, 11, 17, 8, 9, 2, 2, 3, 0, 0],
+        "7 янв.": [35, 4, 13, 4, 4, 1, 6, 13, 6, 7, 5, 0, 2, 0, 0],
+        "9 янв.": [40, 3, 8, 0, 0, 0, 3, 6, 9, 7, 2, 0, 1, 0, 0],
+        "11 янв.": [45, 6, 19, 3, 4, 2, 8, 17, 4, 4, 2, 0, 4, 0, 0],
+        "12 янв.": [33, 5, 7, 0, 0, 5, 6, 15, 2, 8, 1, 0, 2, 0, 0],
+        "14 янв.": [27, 3, 10, 2, 2, 1, 6, 9, 3, 2, 2, 1, 2, 0, 0],
+      },
+    },
+    "Desmond Bane": {
+      firstName: "Desmond",
+      lastName: "Bane",
+      team: "Orlando Magic",
+      positions: "SG, SF",
+      Rank: 80,
+      myTeam: true,
+      stats: {
+        "6 янв.": [24, 5, 8, 4, 6, 1, 2, 15, 2, 3, 0, 0, 4, 0, 0],
+        "7 янв.": [35, 4, 14, 0, 0, 1, 6, 9, 3, 3, 2, 0, 4, 0, 0],
+        "9 янв.": [38, 9, 19, 5, 5, 0, 3, 23, 5, 5, 0, 0, 2, 0, 0],
+        "11 янв.": [35, 9, 18, 8, 8, 1, 4, 27, 5, 4, 2, 0, 3, 0, 0],
+        "15 янв.": [34, 5, 13, 2, 2, 1, 5, 13, 4, 5, 0, 2, 3, 0, 0],
       },
     },
     "Gradey Dick": {
@@ -181,7 +237,7 @@ const players = {
       lastName: "Dick",
       team: "Toronto Raptors",
       positions: "SG, SF",
-      Rank: 288,
+      Rank: 278,
       stats: {
         "22 окт.": [24, 6, 10, 7, 8, 2, 4, 21, 5, 0, 1, 0, 0, 0, 0],
         "24 окт.": [18, 2, 7, 0, 0, 1, 3, 5, 4, 1, 1, 0, 1, 0, 0],
@@ -197,7 +253,7 @@ const players = {
       lastName: "Joe",
       team: "Oklahoma City Thunder",
       positions: "SG, SF",
-      Rank: 133,
+      Rank: 158,
       stats: {
         "4 нояб.": [21, 7, 12, 2, 2, 6, 10, 22, 3, 0, 0, 0, 1, 0, 0],
         "5 нояб.": [26, 4, 12, 3, 4, 3, 10, 14, 0, 2, 0, 0, 2, 0, 0],
@@ -213,7 +269,7 @@ const players = {
       lastName: "Wells",
       team: "Memphis Grizzlies",
       positions: "SG, SF",
-      Rank: 152,
+      Rank: 240,
       stats: {
         "24 нояб.": [33, 8, 13, 2, 4, 4, 8, 22, 5, 3, 1, 0, 0, 0, 0],
         "26 нояб.": [32, 9, 11, 2, 2, 5, 6, 25, 3, 1, 1, 1, 1, 0, 0],
@@ -233,6 +289,7 @@ const players = {
       team: "Atlanta Hawks",
       positions: "SF, PF",
       Rank: 2,
+      myTeam: true,
       stats: {
         "22 окт.": [35, 7, 13, 8, 10, 0, 2, 22, 7, 8, 1, 1, 3, 0, 0],
         "24 окт.": [26, 5, 10, 2, 2, 0, 0, 12, 8, 1, 1, 0, 3, 0, 0],
@@ -264,6 +321,15 @@ const players = {
         "23 дек.": [39, 11, 23, 1, 3, 1, 7, 24, 9, 10, 1, 2, 5, 1, 0],
         "26 дек.": [38, 10, 17, 3, 4, 1, 6, 24, 9, 10, 1, 0, 4, 1, 0],
         "27 дек.": [37, 7, 16, 5, 6, 1, 3, 20, 9, 12, 0, 2, 2, 1, 0],
+        "31 дек.": [32, 15, 22, 1, 1, 3, 6, 34, 10, 6, 2, 1, 3, 1, 0],
+        "2 янв.": [38, 7, 14, 3, 6, 1, 3, 18, 10, 11, 2, 0, 4, 1, 1],
+        "3 янв.": [37, 10, 21, 6, 9, 4, 9, 30, 7, 9, 0, 0, 4, 0, 0],
+        "5 янв.": [37, 5, 15, 3, 4, 0, 4, 13, 14, 7, 1, 1, 6, 1, 0],
+        "7 янв.": [36, 9, 18, 1, 3, 0, 5, 19, 8, 5, 0, 1, 6, 0, 0],
+        "9 янв.": [35, 12, 18, 0, 1, 5, 6, 29, 9, 6, 1, 1, 2, 0, 0],
+        "11 янв.": [33, 9, 16, 4, 6, 1, 4, 23, 11, 6, 1, 2, 0, 1, 0],
+        "13 янв.": [30, 5, 17, 2, 2, 1, 7, 13, 3, 6, 1, 0, 0, 0, 0],
+        "15 янв.": [38, 4, 9, 4, 4, 0, 3, 12, 11, 6, 0, 0, 6, 1, 0],
       },
     },
     "Ausar Thompson": {
@@ -271,7 +337,8 @@ const players = {
       lastName: "Thompson",
       team: "Detroit Pistons",
       positions: "SG, SF, PF",
-      Rank: 146,
+      Rank: 165,
+      myTeam: true,
       stats: {
         "22 окт.": [33, 5, 8, 1, 3, 0, 0, 11, 9, 7, 1, 1, 1, 0, 0],
         "24 окт.": [24, 9, 16, 0, 2, 1, 3, 19, 2, 4, 1, 1, 1, 0, 0],
@@ -299,6 +366,13 @@ const players = {
         "23 дек.": [36, 6, 13, 7, 10, 0, 0, 19, 6, 2, 0, 0, 0, 0, 0],
         "26 дек.": [16, 3, 4, 2, 4, 0, 0, 8, 6, 0, 1, 0, 3, 0, 0],
         "28 дек.": [24, 1, 6, 4, 6, 0, 1, 6, 6, 1, 2, 1, 2, 0, 0],
+        "30 дек.": [22, 3, 6, 1, 4, 0, 0, 7, 2, 3, 1, 1, 0, 0, 0],
+        "1 янв.": [30, 5, 8, 2, 3, 0, 0, 12, 2, 2, 1, 2, 2, 0, 0],
+        "4 янв.": [22, 4, 9, 0, 0, 0, 1, 8, 8, 2, 1, 1, 3, 0, 0],
+        "5 янв.": [20, 4, 8, 2, 2, 0, 0, 10, 7, 1, 2, 0, 3, 0, 0],
+        "7 янв.": [29, 5, 11, 1, 2, 0, 0, 11, 8, 3, 3, 2, 2, 0, 0],
+        "10 янв.": [34, 3, 6, 0, 0, 0, 0, 6, 3, 6, 2, 3, 1, 0, 0],
+        "15 янв.": [19, 2, 6, 1, 2, 0, 1, 5, 6, 2, 0, 0, 0, 0, 0],
       },
     },
     "Herbert Jones": {
@@ -306,11 +380,27 @@ const players = {
       lastName: "Jones",
       team: "New Orleans Pelicans",
       positions: "SF, PF",
-      Rank: 191,
+      Rank: 245,
+      myTeam: true,
       stats: {
         "18 дек.": [38, 7, 14, 2, 2, 2, 6, 18, 3, 3, 8, 1, 1, 0, 0],
         "20 дек.": [12, 2, 6, 0, 0, 1, 2, 5, 3, 3, 1, 0, 0, 0, 0],
         "22 дек.": [22, 4, 7, 0, 0, 1, 2, 9, 2, 4, 1, 0, 1, 0, 0],
+      },
+    },
+    "Luguentz Dort": {
+      firstName: "Luguentz",
+      lastName: "Dort",
+      team: "Oklahoma City Thunder",
+      positions: "SG, PF",
+      Rank: 210,
+      myTeam: true,
+      stats: {
+        "5 янв.": [20, 2, 5, 0, 0, 1, 4, 5, 4, 0, 0, 2, 1, 0, 0],
+        "7 янв.": [24, 2, 5, 1, 2, 1, 4, 6, 6, 0, 3, 1, 0, 0, 0],
+        "9 янв.": [35, 5, 12, 2, 2, 1, 7, 13, 6, 4, 3, 0, 0, 0, 0],
+        "11 янв.": [19, 1, 3, 2, 2, 0, 1, 4, 4, 0, 1, 0, 2, 0, 0],
+        "15 янв.": [21, 5, 8, 0, 0, 3, 5, 13, 3, 1, 0, 1, 2, 0, 0],
       },
     },
   },
@@ -320,7 +410,8 @@ const players = {
       lastName: "Duren",
       team: "Detroit Pistons",
       positions: "C",
-      Rank: 21,
+      Rank: 36,
+      myTeam: true,
       stats: {
         "22 окт.": [20, 7, 12, 1, 2, 0, 0, 15, 6, 1, 1, 2, 1, 0, 0],
         "24 окт.": [12, 3, 4, 0, 0, 0, 0, 6, 6, 0, 1, 1, 1, 0, 0],
@@ -351,6 +442,8 @@ const players = {
         "23 дек.": [32, 10, 15, 3, 7, 0, 0, 23, 13, 4, 0, 2, 1, 1, 0],
         "26 дек.": [22, 5, 7, 1, 1, 0, 0, 11, 4, 0, 0, 0, 4, 0, 0],
         "28 дек.": [31, 8, 12, 2, 2, 0, 0, 18, 14, 2, 0, 1, 1, 1, 0],
+        "30 дек.": [28, 6, 8, 2, 4, 0, 0, 14, 8, 2, 5, 0, 5, 0, 0],
+        "1 янв.": [18, 6, 12, 0, 0, 0, 0, 12, 5, 0, 1, 0, 1, 0, 0],
       },
     },
     "Kel'el Ware": {
@@ -358,7 +451,8 @@ const players = {
       lastName: "Ware",
       team: "Miami Heat",
       positions: "PF, C",
-      Rank: 6,
+      Rank: 15,
+      myTeam: true,
       stats: {
         "22 окт.": [14, 3, 5, 0, 0, 1, 2, 7, 4, 0, 1, 1, 1, 0, 0],
         "24 окт.": [23, 8, 12, 2, 3, 1, 1, 19, 9, 1, 1, 1, 2, 0, 0],
@@ -392,6 +486,15 @@ const players = {
         "23 дек.": [21, 2, 8, 0, 0, 1, 3, 5, 9, 0, 2, 0, 0, 0, 0],
         "26 дек.": [33, 7, 10, 0, 0, 2, 4, 16, 13, 0, 1, 1, 3, 1, 0],
         "27 дек.": [28, 7, 11, 0, 0, 1, 3, 15, 7, 0, 3, 1, 0, 0, 0],
+        "29 дек.": [24, 8, 12, 0, 0, 3, 6, 19, 9, 0, 1, 0, 0, 0, 0],
+        "1 янв.": [27, 1, 6, 2, 2, 0, 4, 4, 13, 0, 2, 2, 1, 0, 0],
+        "3 янв.": [29, 4, 7, 2, 2, 1, 3, 11, 8, 1, 0, 1, 1, 0, 0],
+        "4 янв.": [25, 7, 13, 1, 2, 1, 4, 16, 12, 1, 0, 1, 1, 1, 0],
+        "6 янв.": [28, 3, 10, 0, 0, 1, 5, 7, 11, 2, 0, 1, 1, 0, 0],
+        "10 янв.": [17, 1, 2, 0, 0, 0, 0, 2, 3, 0, 0, 0, 1, 0, 0],
+        "11 янв.": [16, 4, 8, 0, 0, 0, 3, 8, 1, 0, 1, 0, 1, 0, 0],
+        "13 янв.": [16, 4, 6, 0, 0, 2, 3, 10, 5, 1, 1, 0, 0, 0, 0],
+        "15 янв.": [9, 1, 5, 0, 0, 1, 4, 3, 5, 0, 0, 0, 1, 0, 0],
       },
     },
     "Goga Bitadze": {
@@ -400,6 +503,7 @@ const players = {
       team: "Orlando Magic",
       positions: "C",
       Rank: 109,
+      myTeam: true,
       stats: {
         "1 дек.": [18, 3, 5, 2, 2, 0, 0, 8, 5, 3, 1, 4, 1, 0, 0],
         "3 дек.": [19, 4, 4, 0, 0, 0, 0, 8, 5, 2, 1, 1, 2, 0, 0],
@@ -408,6 +512,22 @@ const players = {
         "9 дек.": [17, 3, 4, 1, 1, 0, 0, 7, 6, 1, 0, 2, 2, 0, 0],
         "13 дек.": [13, 0, 0, 0, 0, 0, 0, 0, 3, 1, 1, 1, 0, 0, 0],
         "18 дек.": [19, 3, 7, 0, 0, 0, 1, 6, 4, 1, 2, 2, 0, 0, 0],
+      },
+    },
+    "Luka Garza": {
+      firstName: "Luka",
+      lastName: "Garza",
+      team: "Boston Celtics",
+      positions: "C",
+      Rank: 143,
+      myTeam: true,
+      stats: {
+        "5 янв.": [23, 3, 4, 2, 2, 0, 0, 8, 4, 0, 1, 2, 0, 0, 0],
+        "7 янв.": [19, 5, 5, 0, 0, 1, 1, 11, 5, 0, 0, 0, 0, 0, 0],
+        "9 янв.": [21, 3, 8, 0, 0, 0, 0, 6, 7, 1, 0, 1, 0, 0, 0],
+        "10 янв.": [25, 4, 6, 0, 0, 3, 4, 11, 6, 0, 0, 1, 1, 0, 0],
+        "12 янв.": [16, 3, 4, 0, 0, 0, 0, 6, 6, 1, 0, 0, 0, 0, 0],
+        "15 янв.": [28, 4, 8, 2, 2, 1, 3, 11, 4, 1, 1, 0, 1, 0, 0],
       },
     },
   },
@@ -423,7 +543,7 @@ function validateStatsLength(players) {
           console.log(
             `${name} - ${date}: ${
               Array.isArray(stats) ? stats.length : "не массив"
-            } элементов`
+            } элементов`,
           );
           ok = false;
         }
@@ -434,7 +554,7 @@ function validateStatsLength(players) {
   if (ok) console.log("OK");
 } // Проверка статистики
 // validateStatsLength(players);
-const result = "8-2-0";
+const result = "9-3-0";
 document.querySelector(".profile_result").textContent = result; // Результат
 function calculateStatsTotalsAndAverages(players) {
   const fmtMin = (t) => {
@@ -506,6 +626,7 @@ const statisticTitles = {
 }; // Полные наименования аббревиатур статистики
 const clubAbbreviations = {
   "Atlanta Hawks": "ATL",
+  "Boston Celtics": "BOS",
   "Detroit Pistons": "DET",
   "Memphis Grizzlies": "MEM",
   "Miami Heat": "MIA",
@@ -515,6 +636,7 @@ const clubAbbreviations = {
   "Orlando Magic": "ORL",
   "Philadelphia 76ers": "PHI",
   "Toronto Raptors": "TOR",
+  "Washington Wizards": "WAS",
 }; // Аббревиатуры клубов
 const positions = ["PG", "SG", "G", "SF", "PF", "F", "C"]; // Позиции
 const basicLink = "https://shoneal.github.io/nba-draft/images/players/";
@@ -526,14 +648,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const storedTheme = localStorage.getItem("theme");
   if (storedTheme === "dark") {
     document.body.classList.add("dark-theme");
-  }
+  } // Смена темы
 
+  document.querySelectorAll(".filter_header").forEach((el) => {
+    if (!el.querySelector("svg")) {
+      el.append(document.querySelector(".filter_header svg").cloneNode(true));
+    }
+  }); // Клонирование svg
+
+  setupAndHandleFilter(selectAvailable, filterAvailable);
   setupAndHandleFilter(selectTeams, filterTeams);
   setupAndHandleFilter(selectPositions, filterPositions);
 
   initializeTable();
 }); // Начальная загрузка
 
+const selectAvailable = document.querySelector(".select_available");
 const selectTeams = document.querySelector(".select_teams");
 const selectPositions = document.querySelector(".select_positions");
 function fillTeams(select, data) {
@@ -585,7 +715,7 @@ const statsMap = (() => {
         title,
         className: cells[index]?.classList[0] || "",
       },
-    ])
+    ]),
   );
 })(); // Полные наименования аббревиатур статистики + его соответствующие классы из HTML
 
@@ -596,13 +726,11 @@ Object.values(players).forEach((positionGroup) => {
 }); // Подсчет общего количества игроков
 function updatePlayersTable() {
   const searchValue = normalizeString(searchInput.value);
+  const selectedAvailable = selectAvailable.value;
   const selectedTeam = selectTeams.value;
-  const defaultTeam = selectTeams.querySelector(
-    ".select_teams option[selected]"
-  ).value;
+  let defaultTeam = selectTeams.querySelector("option[selected]").value;
   const selectedPosition = selectPositions.value;
-  const defaultPosition =
-    selectPositions.querySelector("option[selected]").value;
+  let defaultPosition = selectPositions.querySelector("option[selected]").value;
 
   function normalizeString(str) {
     return str
@@ -615,7 +743,7 @@ function updatePlayersTable() {
     Object.entries(positionGroup).map(([name, player]) => ({
       name,
       ...player,
-    }))
+    })),
   );
 
   let filteredPlayers = flatArray;
@@ -624,8 +752,15 @@ function updatePlayersTable() {
     filteredPlayers = filteredPlayers.filter(
       (player) =>
         normalizeString(player.firstName).includes(searchValue) ||
-        normalizeString(player.lastName).includes(searchValue)
+        normalizeString(player.lastName).includes(searchValue),
     );
+  }
+
+  if (selectedAvailable) {
+    filteredPlayers =
+      selectedAvailable === "My Team"
+        ? flatArray.filter((player) => player.myTeam === true)
+        : [...flatArray];
   }
 
   function applyFilter(value, defaultValue, field, compareFn) {
@@ -636,27 +771,27 @@ function updatePlayersTable() {
     }
   }
   applyFilter(selectedTeam, defaultTeam, "team", (playerValue, filterValue) =>
-    playerValue.toLowerCase().includes(filterValue.toLowerCase())
+    playerValue.toLowerCase().includes(filterValue.toLowerCase()),
   );
   applyFilter(
     selectedPosition,
     defaultPosition,
     "positions",
-    (playerValue, filterValue) => playerValue.includes(filterValue)
+    (playerValue, filterValue) => playerValue.includes(filterValue),
   );
 
   const isAveragesActive =
     document.querySelector(
-      ".table_output_button.is_average.table_output_button-is_active"
+      ".table_output_button.is_average.table_output_button-is_active",
     ) !== null;
   const dataSource = isAveragesActive ? "statsAverages" : "statsTotals";
 
   filteredPlayers.sort((a, b) => {
     let valA, valB;
     const activeButton = Array.from(headerButtons).find((btn) =>
-      btn.classList.contains("active-button")
+      btn.classList.contains("active-button"),
     );
-    const sortBy = activeButton?.textContent || "G";
+    const sortBy = activeButton?.textContent || "Rank";
 
     if (sortBy in a[dataSource]) {
       valA = a[dataSource][sortBy];
@@ -677,11 +812,6 @@ function updatePlayersTable() {
 
     const isAscending = ["Rank", "TO"].includes(sortBy);
 
-    if (valA === valB) {
-      const rankA = a.Rank;
-      const rankB = b.Rank;
-      return rankA - rankB;
-    }
     return isAscending ? valA - valB : valB - valA;
   });
 
@@ -694,7 +824,7 @@ let activePlayerName = null;
 function updateNumbers(row) {
   const item = row.playerData;
   const isAveragesActive = !!document.querySelector(
-    ".table_output_button.is_average.table_output_button-is_active"
+    ".table_output_button.is_average.table_output_button-is_active",
   );
   const dataSource = isAveragesActive ? item.statsAverages : item.statsTotals;
 
@@ -709,8 +839,8 @@ function updateNumbers(row) {
       key === "Rank"
         ? item.Rank
         : dataSource && key in dataSource
-        ? dataSource[key]
-        : item[key] || 0;
+          ? dataSource[key]
+          : item[key] || 0;
 
     const fromAverages = isAveragesActive;
     const showDecimal = statKeys.indexOf(key) >= boundaryIndex && key !== "3P%";
@@ -734,7 +864,7 @@ function updateNumbers(row) {
       "zero-value",
       (fromAverages && showDecimal && cell.textContent === "0.0") ||
         ((!fromAverages || !showDecimal) && cell.textContent === "0") ||
-        cell.textContent === ".000"
+        cell.textContent === ".000",
     );
   });
 }
@@ -793,6 +923,13 @@ function createTableRow(item) {
       }
     }
   };
+
+  const selectedAvailable = selectAvailable.value;
+  if (selectedAvailable !== "My Team" && item.myTeam) {
+    player.dataset.myTeamPlayer = "yes";
+  } else {
+    delete player.dataset.myTeamPlayer;
+  }
 
   player.addEventListener("click", handleClick);
   player
@@ -867,6 +1004,7 @@ clearButton.addEventListener("click", function () {
   updateTable();
 }); // Очистка поиска
 
+const filterAvailable = document.querySelector(".filter_available");
 const filterTeams = document.querySelector(".filter_teams");
 const filterPositions = document.querySelector(".filter_positions");
 function updateFilterTitle(select, filterContainer) {
@@ -916,12 +1054,12 @@ function initializeTable() {
 } // Начальная отрисовка
 
 const switchingStatisticsButtons = document.querySelectorAll(
-  ".table_output_button"
+  ".table_output_button",
 );
 switchingStatisticsButtons.forEach((button) => {
   button.addEventListener("click", () => {
     switchingStatisticsButtons.forEach((btn) =>
-      btn.classList.remove("table_output_button-is_active")
+      btn.classList.remove("table_output_button-is_active"),
     );
     button.classList.add("table_output_button-is_active");
     headerButtons.forEach((headerBtn) => {
@@ -962,6 +1100,11 @@ function setupResponsiveTable() {
         const firstTd = row.firstElementChild;
         if (!firstTd) return;
 
+        const hasMyTeamPlayer = row.dataset.myTeamPlayer === "yes";
+        const toggleClass = (el, className) => {
+          el?.classList.toggle(className, hasMyTeamPlayer);
+        };
+
         if (mobile) {
           let statsRow = row.nextElementSibling;
           if (!statsRow || !statsRow.classList.contains("table_row-stats")) {
@@ -975,18 +1118,23 @@ function setupResponsiveTable() {
             statsRow.playerData = row.playerData;
           }
 
+          toggleClass(row, "my_team_player");
+          toggleClass(statsRow, "my_team_player");
+
           firstTd.colSpan = 15;
           firstTd.classList.add("table_cell-mobile-first");
           statsRow.classList.toggle(
             "table_row-is_active",
-            row.classList.contains("table_row-is_active")
+            row.classList.contains("table_row-is_active"),
           );
         } else {
           const statsRow = row.nextElementSibling;
           if (statsRow && statsRow.classList.contains("table_row-stats")) {
+            toggleClass(statsRow, "my_team_player");
             [...statsRow.children].forEach((td) => row.appendChild(td));
             statsRow.remove();
           }
+          toggleClass(row, "my_team_player");
           firstTd.colSpan = 1;
           firstTd.classList.remove("table_cell-mobile-first");
         }

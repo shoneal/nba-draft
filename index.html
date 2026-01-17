@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="eng">
   <head>
     <meta charset="UTF-8" />
@@ -83,41 +83,42 @@
             </svg>
           </button>
         </div>
-        <div class="filter_teams filter">
-          <div class="filter_header">
-            <p class="filter_title"></p>
-            <svg
-              width="20"
-              height="20"
-              data-icon="caret-down"
-              viewBox="0 0 48 48"
-            >
-              <path
-                d="m24.21 33.173 12.727-12.728c.78-.78.78-2.048 0-2.828a2.001 2.001 0 0 0-2.828 0l-9.9 9.9-9.9-9.9a2 2 0 0 0-2.827 2.828L24.21 33.173z"
-              />
-            </svg>
+        <div class="selections">
+          <div class="filter_available filter">
+            <div class="filter_header">
+              <p class="filter_title"></p>
+              <svg
+                width="20"
+                height="20"
+                data-icon="caret-down"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="m24.21 33.173 12.727-12.728c.78-.78.78-2.048 0-2.828a2.001 2.001 0 0 0-2.828 0l-9.9 9.9-9.9-9.9a2 2 0 0 0-2.827 2.828L24.21 33.173z"
+                />
+              </svg>
+            </div>
+            <select class="select_available select">
+              <option value="My Team" selected>My Team</option>
+              <option value="All Players">All Players</option>
+            </select>
           </div>
-          <select class="select_teams select">
-            <option value="NBA" selected>NBA</option>
-          </select>
-        </div>
-        <div class="filter_positions filter">
-          <div class="filter_header">
-            <p class="filter_title"></p>
-            <svg
-              width="20"
-              height="20"
-              data-icon="caret-down"
-              viewBox="0 0 48 48"
-            >
-              <path
-                d="m24.21 33.173 12.727-12.728c.78-.78.78-2.048 0-2.828a2.001 2.001 0 0 0-2.828 0l-9.9 9.9-9.9-9.9a2 2 0 0 0-2.827 2.828L24.21 33.173z"
-              />
-            </svg>
+          <div class="filter_teams filter">
+            <div class="filter_header">
+              <p class="filter_title"></p>
+            </div>
+            <select class="select_teams select">
+              <option value="NBA" selected>NBA</option>
+            </select>
           </div>
-          <select class="select_positions select">
-            <option value="ALL" selected>ALL</option>
-          </select>
+          <div class="filter_positions filter">
+            <div class="filter_header">
+              <p class="filter_title"></p>
+            </div>
+            <select class="select_positions select">
+              <option value="ALL" selected>ALL</option>
+            </select>
+          </div>
         </div>
         <div class="table_output">
           <button class="table_output_button is_average">Averages</button>
