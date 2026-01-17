@@ -249,7 +249,6 @@ td {
   padding: 8px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
   white-space: nowrap;
 }
 
@@ -489,7 +488,6 @@ thead th {
   th,
   td {
     font-size: 12px;
-    line-height: 20px;
   }
 }
 
