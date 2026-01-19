@@ -22,7 +22,7 @@ const players = {
       lastName: "Black",
       team: "Orlando Magic",
       positions: "PG, SG, SF",
-      Rank: 95,
+      Rank: 99,
       myTeam: true,
       stats: {
         "22 окт.": [23, 3, 9, 0, 0, 1, 2, 7, 3, 3, 0, 1, 0, 0, 0],
@@ -66,6 +66,7 @@ const players = {
         "9 янв.": [37, 7, 12, 4, 4, 3, 7, 21, 3, 4, 0, 0, 4, 0, 0],
         "11 янв.": [36, 9, 10, 5, 7, 3, 4, 26, 5, 7, 3, 0, 4, 0, 0],
         "15 янв.": [36, 7, 13, 3, 3, 4, 7, 21, 6, 7, 1, 0, 1, 0, 0],
+        "18 янв.": [37, 7, 15, 3, 4, 2, 6, 19, 2, 6, 0, 0, 4, 0, 0],
       },
     },
   },
@@ -75,7 +76,7 @@ const players = {
       lastName: "Alexander-Walker",
       team: "Atlanta Hawks",
       positions: "PG, SG, SF",
-      Rank: 48,
+      Rank: 46,
       myTeam: true,
       stats: {
         "22 окт.": [28, 2, 15, 5, 6, 1, 5, 10, 4, 4, 1, 1, 1, 0, 0],
@@ -119,6 +120,7 @@ const players = {
         "11 янв.": [34, 9, 18, 3, 3, 3, 7, 24, 2, 2, 3, 0, 1, 0, 0],
         "13 янв.": [33, 10, 16, 1, 1, 5, 9, 26, 4, 3, 0, 0, 0, 0, 0],
         "15 янв.": [29, 2, 6, 5, 6, 2, 4, 11, 6, 7, 1, 0, 3, 0, 0],
+        "17 янв.": [29, 6, 16, 2, 2, 4, 9, 18, 2, 6, 1, 1, 0, 0, 0],
       },
     },
     "Donte DiVincenzo": {
@@ -126,7 +128,7 @@ const players = {
       lastName: "DiVincenzo",
       team: "Minnesota Timberwolves",
       positions: "PG, SG",
-      Rank: 54,
+      Rank: 53,
       myTeam: true,
       stats: {
         "22 окт.": [20, 3, 6, 0, 0, 1, 3, 7, 4, 2, 2, 2, 6, 0, 0],
@@ -170,6 +172,8 @@ const players = {
         "10 янв.": [34, 6, 9, 0, 0, 3, 6, 15, 3, 6, 2, 0, 4, 0, 0],
         "11 янв.": [38, 7, 16, 0, 0, 5, 12, 19, 9, 7, 3, 1, 2, 0, 0],
         "13 янв.": [30, 4, 6, 0, 0, 3, 5, 11, 4, 7, 0, 0, 2, 0, 0],
+        "16 янв.": [40, 3, 10, 0, 0, 2, 7, 8, 8, 4, 1, 1, 2, 0, 0],
+        "17 янв.": [36, 4, 14, 0, 0, 3, 10, 11, 5, 3, 2, 1, 3, 0, 0],
       },
     },
     "VJ Edgecombe": {
@@ -177,7 +181,7 @@ const players = {
       lastName: "Edgecombe",
       team: "Philadelphia 76ers",
       positions: "PG, SG",
-      Rank: 77,
+      Rank: 70,
       myTeam: true,
       stats: {
         "22 окт.": [42, 13, 26, 3, 6, 5, 13, 34, 7, 3, 1, 0, 2, 0, 0],
@@ -215,6 +219,7 @@ const players = {
         "11 янв.": [45, 6, 19, 3, 4, 2, 8, 17, 4, 4, 2, 0, 4, 0, 0],
         "12 янв.": [33, 5, 7, 0, 0, 5, 6, 15, 2, 8, 1, 0, 2, 0, 0],
         "14 янв.": [27, 3, 10, 2, 2, 1, 6, 9, 3, 2, 2, 1, 2, 0, 0],
+        "16 янв.": [35, 4, 5, 0, 0, 2, 2, 10, 4, 4, 0, 1, 3, 0, 0],
       },
     },
     "Desmond Bane": {
@@ -222,7 +227,7 @@ const players = {
       lastName: "Bane",
       team: "Orlando Magic",
       positions: "SG, SF",
-      Rank: 80,
+      Rank: 83,
       myTeam: true,
       stats: {
         "6 янв.": [24, 5, 8, 4, 6, 1, 2, 15, 2, 3, 0, 0, 4, 0, 0],
@@ -230,6 +235,7 @@ const players = {
         "9 янв.": [38, 9, 19, 5, 5, 0, 3, 23, 5, 5, 0, 0, 2, 0, 0],
         "11 янв.": [35, 9, 18, 8, 8, 1, 4, 27, 5, 4, 2, 0, 3, 0, 0],
         "15 янв.": [34, 5, 13, 2, 2, 1, 5, 13, 4, 5, 0, 2, 3, 0, 0],
+        "18 янв.": [36, 4, 12, 2, 2, 1, 4, 11, 4, 3, 2, 1, 2, 0, 0],
       },
     },
     "Gradey Dick": {
@@ -330,6 +336,7 @@ const players = {
         "11 янв.": [33, 9, 16, 4, 6, 1, 4, 23, 11, 6, 1, 2, 0, 1, 0],
         "13 янв.": [30, 5, 17, 2, 2, 1, 7, 13, 3, 6, 1, 0, 0, 0, 0],
         "15 янв.": [38, 4, 9, 4, 4, 0, 3, 12, 11, 6, 0, 0, 6, 1, 0],
+        "17 янв.": [35, 4, 14, 2, 4, 2, 6, 12, 8, 5, 1, 0, 4, 0, 0],
       },
     },
     "Ausar Thompson": {
@@ -337,7 +344,7 @@ const players = {
       lastName: "Thompson",
       team: "Detroit Pistons",
       positions: "SG, SF, PF",
-      Rank: 165,
+      Rank: 152,
       myTeam: true,
       stats: {
         "22 окт.": [33, 5, 8, 1, 3, 0, 0, 11, 9, 7, 1, 1, 1, 0, 0],
@@ -373,6 +380,7 @@ const players = {
         "7 янв.": [29, 5, 11, 1, 2, 0, 0, 11, 8, 3, 3, 2, 2, 0, 0],
         "10 янв.": [34, 3, 6, 0, 0, 0, 0, 6, 3, 6, 2, 3, 1, 0, 0],
         "15 янв.": [19, 2, 6, 1, 2, 0, 1, 5, 6, 2, 0, 0, 0, 0, 0],
+        "17 янв.": [16, 2, 3, 3, 5, 0, 0, 7, 7, 1, 3, 1, 1, 0, 0],
       },
     },
     "Herbert Jones": {
@@ -380,7 +388,7 @@ const players = {
       lastName: "Jones",
       team: "New Orleans Pelicans",
       positions: "SF, PF",
-      Rank: 245,
+      Rank: 249,
       myTeam: true,
       stats: {
         "18 дек.": [38, 7, 14, 2, 2, 2, 6, 18, 3, 3, 8, 1, 1, 0, 0],
@@ -393,7 +401,7 @@ const players = {
       lastName: "Dort",
       team: "Oklahoma City Thunder",
       positions: "SG, PF",
-      Rank: 210,
+      Rank: 218,
       myTeam: true,
       stats: {
         "5 янв.": [20, 2, 5, 0, 0, 1, 4, 5, 4, 0, 0, 2, 1, 0, 0],
@@ -401,6 +409,7 @@ const players = {
         "9 янв.": [35, 5, 12, 2, 2, 1, 7, 13, 6, 4, 3, 0, 0, 0, 0],
         "11 янв.": [19, 1, 3, 2, 2, 0, 1, 4, 4, 0, 1, 0, 2, 0, 0],
         "15 янв.": [21, 5, 8, 0, 0, 3, 5, 13, 3, 1, 0, 1, 2, 0, 0],
+        "17 янв.": [22, 1, 5, 0, 0, 0, 2, 2, 4, 0, 0, 1, 1, 0, 0],
       },
     },
   },
@@ -410,7 +419,7 @@ const players = {
       lastName: "Duren",
       team: "Detroit Pistons",
       positions: "C",
-      Rank: 36,
+      Rank: 38,
       myTeam: true,
       stats: {
         "22 окт.": [20, 7, 12, 1, 2, 0, 0, 15, 6, 1, 1, 2, 1, 0, 0],
@@ -451,7 +460,7 @@ const players = {
       lastName: "Ware",
       team: "Miami Heat",
       positions: "PF, C",
-      Rank: 15,
+      Rank: 16,
       myTeam: true,
       stats: {
         "22 окт.": [14, 3, 5, 0, 0, 1, 2, 7, 4, 0, 1, 1, 1, 0, 0],
@@ -495,6 +504,7 @@ const players = {
         "11 янв.": [16, 4, 8, 0, 0, 0, 3, 8, 1, 0, 1, 0, 1, 0, 0],
         "13 янв.": [16, 4, 6, 0, 0, 2, 3, 10, 5, 1, 1, 0, 0, 0, 0],
         "15 янв.": [9, 1, 5, 0, 0, 1, 4, 3, 5, 0, 0, 0, 1, 0, 0],
+        "17 янв.": [16, 3, 11, 0, 0, 1, 3, 7, 9, 0, 1, 1, 0, 0, 0],
       },
     },
     "Goga Bitadze": {
@@ -502,7 +512,7 @@ const players = {
       lastName: "Bitadze",
       team: "Orlando Magic",
       positions: "C",
-      Rank: 109,
+      Rank: 116,
       myTeam: true,
       stats: {
         "1 дек.": [18, 3, 5, 2, 2, 0, 0, 8, 5, 3, 1, 4, 1, 0, 0],
@@ -519,7 +529,7 @@ const players = {
       lastName: "Garza",
       team: "Boston Celtics",
       positions: "C",
-      Rank: 143,
+      Rank: 149,
       myTeam: true,
       stats: {
         "5 янв.": [23, 3, 4, 2, 2, 0, 0, 8, 4, 0, 1, 2, 0, 0, 0],
@@ -528,6 +538,7 @@ const players = {
         "10 янв.": [25, 4, 6, 0, 0, 3, 4, 11, 6, 0, 0, 1, 1, 0, 0],
         "12 янв.": [16, 3, 4, 0, 0, 0, 0, 6, 6, 1, 0, 0, 0, 0, 0],
         "15 янв.": [28, 4, 8, 2, 2, 1, 3, 11, 4, 1, 1, 0, 1, 0, 0],
+        "17 янв.": [12, 2, 3, 0, 1, 0, 1, 4, 4, 2, 0, 1, 0, 0, 0],
       },
     },
   },
@@ -554,7 +565,7 @@ function validateStatsLength(players) {
   if (ok) console.log("OK");
 } // Проверка статистики
 // validateStatsLength(players);
-const result = "9-3-0";
+const result = "9-4-0";
 document.querySelector(".profile_result").textContent = result; // Результат
 function calculateStatsTotalsAndAverages(players) {
   const fmtMin = (t) => {
@@ -868,15 +879,30 @@ function updateNumbers(row) {
     );
   });
 }
+const setupImageWithContainer = (img) => {
+  const onLoadOrError = () => {
+    img.style.opacity = "1";
+    img.removeEventListener("load", onLoadOrError);
+    img.removeEventListener("error", onLoadOrError);
+  };
+
+  if (img.complete) {
+    onLoadOrError();
+  } else {
+    img.addEventListener("load", onLoadOrError);
+    img.addEventListener("error", onLoadOrError);
+  }
+}; // Функция для настройки прозрачности изображения
 function createTableRow(item) {
   const player = playerRowTemplate.querySelector(".table_row").cloneNode(true);
   player.dataset.playerName = item.name;
   player.playerData = item;
 
   const photo = player.querySelector(".player_photo");
+  photo.style.opacity = "0";
   photo.src = `${basicLink}${normalizeString(item.name)}.png`;
   photo.alt = item.name;
-  photo.addEventListener("load", () => (photo.style.opacity = "1"));
+  setupImageWithContainer(photo);
 
   function normalizeString(str) {
     return str
