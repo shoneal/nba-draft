@@ -89,10 +89,23 @@ body {
   line-height: 35px;
 }
 
-.profile_result {
+.profile_result_wrapper {
+  display: flex;
+  flex-direction: column;
   justify-self: end;
+  align-items: center;
+}
+
+.profile_result {
   font-size: 22px;
   line-height: 26px;
+}
+
+.profile_result_place {
+  color: var(--subtext);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .filters {
@@ -480,7 +493,7 @@ thead th {
     row-gap: 0;
   }
 
-  .profile_result {
+  .profile_result_wrapper {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     justify-self: start;
@@ -525,12 +538,24 @@ thead th {
     white-space: nowrap;
   }
 
-  .profile_result {
+  .profile_result_wrapper {
+    display: inline-block;
     align-self: start;
     color: var(--subtext);
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .profile_result {
+    display: inline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile_result_place {
+    display: inline;
   }
 
   .search_input {
