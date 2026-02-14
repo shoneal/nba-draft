@@ -6,7 +6,7 @@
     url(./HelveticaNeue-Roman.otf) format("opentype"),
     url(./HelveticaNeue-Roman.eot) format("embedded-opentype");
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -17,7 +17,7 @@
     url(./HelveticaNeue-Medium.otf) format("opentype"),
     url(./HelveticaNeue-Medium.eot) format("embedded-opentype");
   font-weight: 500;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -28,19 +28,19 @@
     url(./HelveticaNeue-Bold.otf) format("opentype"),
     url(./HelveticaNeue-Bold.eot) format("embedded-opentype");
   font-weight: 700;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
   font-family: "Helvetica Neue Italic";
   src: url(./helvetica-neue-black-condensed.ttf) format("truetype");
   font-weight: 900;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
   font-family: "Helvetica Neue Condensed";
   src: url(./helvetica-neue-lt-pro-77-bold-condensed.otf) format("opentype");
   font-weight: 700;
-  font-display: swap;
+  font-display: block;
 }
