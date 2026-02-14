@@ -1,0 +1,17 @@
+const clubAbbreviations = {
+  "Atlanta Hawks": "ATL",
+  "Boston Celtics": "BOS",
+  "Chicago Bulls": "CHI",
+  "Detroit Pistons": "DET",
+  "Memphis Grizzlies": "MEM",
+  "Miami Heat": "MIA",
+  "Minnesota Timberwolves": "MIN",
+  "New Orleans Pelicans": "NOP",
+  "Oklahoma City Thunder": "OKC",
+  "Orlando Magic": "ORL",
+  "Philadelphia 76ers": "PHI",
+  "Phoenix Suns": "PHX",
+  "Portland Trail Blazers": "POR",
+  "Toronto Raptors": "TOR",
+  "Washington Wizards": "WAS",
+}; // Аббревиатуры клубов
