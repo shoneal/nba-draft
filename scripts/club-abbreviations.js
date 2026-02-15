@@ -1,4 +1,4 @@
-const clubAbbreviations = {
+export const clubAbbreviations = {
   "Atlanta Hawks": "ATL",
   "Boston Celtics": "BOS",
   "Chicago Bulls": "CHI",

@@ -1,3 +1,7 @@
+import { players } from './players.js';
+import { result, place } from './result-and-place.js';
+import { clubAbbreviations } from './club-abbreviations.js';
+
 function validateStatsLength(players) {
   let ok = true;
 

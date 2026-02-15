@@ -1,2 +1,2 @@
-const result = "12-4-0";
-const place = 3;
+export const result = "12-4-0";
+export const place = 3;

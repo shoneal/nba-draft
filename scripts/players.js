@@ -1,4 +1,4 @@
-const players = {
+export const players = {
   PG: {
     "Trae Young": {
       firstName: "Trae",
