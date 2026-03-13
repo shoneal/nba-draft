@@ -1,88 +1,6 @@
-import { players } from './players.js';
-import { result, place } from './result-and-place.js';
-import { clubAbbreviations } from './club-abbreviations.js';
+import { players } from "./players.js";
+import { clubAbbreviations } from "./club-abbreviations.js";
 
-function validateStatsLength(players) {
-  let ok = true;
-
-  for (const pos in players) {
-    for (const name in players[pos]) {
-      for (const date in players[pos][name].stats) {
-        const stats = players[pos][name].stats[date];
-        if (!Array.isArray(stats) || stats.length !== 15) {
-          console.log(
-            `${name} - ${date}: ${
-              Array.isArray(stats) ? stats.length : "не массив"
-            } элементов`,
-          );
-          ok = false;
-        }
-      }
-    }
-  }
-
-  if (ok) console.log("OK");
-} // Проверка статистики
-// validateStatsLength(players);
-
-document.querySelector(".profile_result").textContent = result; // Результат
-const updatePlaceText = () => {
-  document.querySelector(".profile_result_place").textContent =
-    window.innerWidth > 768 ? `${place}rd Place` : `• ${place}rd or 20`;
-};
-window.addEventListener("resize", updatePlaceText); // Место
-
-function calculateStatsTotalsAndAverages(players) {
-  const fmtMin = (t) => {
-    const s = Math.round(t * 60);
-    return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, "0")}`;
-  };
-
-  const sumCol = (records, idx) =>
-    records.reduce((s, r) => s + (r[idx] || 0), 0);
-  const pct = (m, a) => (a > 0 ? Math.round((m / a) * 1000) / 10 : 0);
-
-  for (const pos in players) {
-    for (const name in players[pos]) {
-      const player = players[pos][name];
-      const records = Object.values(player.stats);
-      const n = records.length;
-
-      const statsTotals = {
-        G: n,
-        Min: fmtMin(sumCol(records, 0) / n),
-        "FG%": pct(sumCol(records, 1), sumCol(records, 2)),
-        "FT%": pct(sumCol(records, 3), sumCol(records, 4)),
-        "3PM": sumCol(records, 5),
-        "3P%": pct(sumCol(records, 5), sumCol(records, 6)),
-        Pts: sumCol(records, 7),
-        Reb: sumCol(records, 8),
-        Ast: sumCol(records, 9),
-        Stl: sumCol(records, 10),
-        Blk: sumCol(records, 11),
-        TO: sumCol(records, 12),
-        DD: sumCol(records, 13),
-        TD: sumCol(records, 14),
-      };
-
-      const keys = Object.keys(statsTotals);
-      const startIdx = keys.indexOf("3PM");
-      const avgKeys = keys.slice(startIdx).filter((key) => key !== "3P%");
-
-      const statsAverages = { ...statsTotals };
-      for (const key of avgKeys) {
-        statsAverages[key] = Math.round((statsTotals[key] / n) * 10) / 10;
-      }
-
-      player.statsTotals = statsTotals;
-      player.statsAverages = statsAverages;
-      delete player.stats;
-    }
-  }
-
-  return players;
-}
-calculateStatsTotalsAndAverages(players); // Обновление показателей
 const statisticTitles = {
   Rank: "Rank",
   G: "Games Played",
@@ -103,19 +21,82 @@ const statisticTitles = {
 const positions = ["PG", "SG", "G", "SF", "PF", "F", "C"]; // Позиции
 const basicLink = "https://shoneal.github.io/nba-draft/images/players/";
 
-const checkTeamsInAbbreviations = (players, clubAbbreviations) => {
-  const missing = Object.values(players)
-    .flatMap((pos) => Object.values(pos).map((p) => p.team))
-    .filter((team, i, arr) => arr.indexOf(team) === i) // уникальные команды
-    .filter((team) => !(team in clubAbbreviations));
+function transformPlayerStats(players) {
+  // Вспомогательная функция для форматирования минут во время 00:00
+  const fmtMin = (t) => {
+    const s = Math.round(t * 60);
+    return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, "0")}`;
+  };
 
-  console.log(
-    missing.length
-      ? missing.map((t) => `Нет команды: ${t}`).join("\n")
-      : "Все команды есть",
-  );
-}; // Проверка команд, которых нет в clubAbbreviations
-// checkTeamsInAbbreviations(players, clubAbbreviations)
+  // Вспомогательная функция для расчёта процентов с округлением до одного знака
+  const pct = (m, a) => (a > 0 ? Math.round((m / a) * 1000) / 10 : 0);
+
+  const result = { ...players };
+
+  for (const position in result) {
+    const playersInPosition = result[position];
+
+    for (const playerName in playersInPosition) {
+      const player = playersInPosition[playerName];
+      const stats = player.stats;
+
+      // Извлекаем G (первое число из stats)
+      const G = stats[0];
+
+      // Рассчитываем процентные значения
+      const FG_pct = pct(stats[2], stats[3]);
+      const FT_pct = pct(stats[4], stats[5]);
+      const ThreeP_pct = pct(stats[6], stats[7]);
+
+      // Среднее количество минут на игру
+      const avgMin = G !== 0 ? stats[1] / G : 0;
+
+      // Создаём statsTotals
+      const statsTotals = {
+        G: G,
+        Min: fmtMin(stats[1]), // Общее время игры
+        "FG%": FG_pct,
+        "FT%": FT_pct,
+        "3PM": stats[6],
+        "3P%": ThreeP_pct,
+        Pts: stats[8],
+        Reb: stats[9],
+        Ast: stats[10],
+        Stl: stats[11],
+        Blk: stats[12],
+        TO: stats[13],
+        DD: stats[14],
+        TD: stats[15],
+      };
+
+      // Создаём statsAverages
+      const statsAverages = {
+        G: G,
+        Min: fmtMin(avgMin), // Среднее время на игру
+        "FG%": FG_pct, // процентные значения не делятся на G
+        "FT%": FT_pct, // процентные значения не делятся на G
+        "3PM": G !== 0 ? Number((stats[6] / G).toFixed(1)) : 0,
+        "3P%": ThreeP_pct, // процентное значение не делится на G
+        Pts: G !== 0 ? Math.round(stats[8] / G) : 0, // округление до целого числа
+        Reb: G !== 0 ? Number((stats[9] / G).toFixed(1)) : 0,
+        Ast: G !== 0 ? Number((stats[10] / G).toFixed(1)) : 0,
+        Stl: G !== 0 ? Number((stats[11] / G).toFixed(1)) : 0,
+        Blk: G !== 0 ? Number((stats[12] / G).toFixed(1)) : 0,
+        TO: G !== 0 ? Number((stats[13] / G).toFixed(1)) : 0,
+        DD: G !== 0 ? Number((stats[14] / G).toFixed(1)) : 0,
+        TD: G !== 0 ? Math.round(stats[15] / G) : 0, // округление до целого числа
+      };
+
+      // Удаляем исходный массив stats и добавляем новые объекты
+      delete player.stats;
+      player.statsTotals = statsTotals;
+      player.statsAverages = statsAverages;
+    }
+  }
+
+  return result;
+}
+transformPlayerStats(players); // Обновление показателей
 
 let isUpdating = false; // Флаг обновления
 let playersCount = 0; // Счетчик игроков
@@ -132,15 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }); // Клонирование svg
 
-  setupAndHandleFilter(selectAvailable, filterAvailable);
   setupAndHandleFilter(selectTeams, filterTeams);
   setupAndHandleFilter(selectPositions, filterPositions);
 
-  updatePlaceText();
   initializeTable();
 }); // Начальная загрузка
 
-const selectAvailable = document.querySelector(".select_available");
 const selectTeams = document.querySelector(".select_teams");
 const selectPositions = document.querySelector(".select_positions");
 function fillTeams(select, data) {
@@ -203,7 +181,6 @@ Object.values(players).forEach((positionGroup) => {
 }); // Подсчет общего количества игроков
 function updatePlayersTable() {
   const searchValue = normalizeString(searchInput.value);
-  const selectedAvailable = selectAvailable.value;
   const selectedTeam = selectTeams.value;
   let defaultTeam = selectTeams.querySelector("option[selected]").value;
   const selectedPosition = selectPositions.value;
@@ -231,13 +208,6 @@ function updatePlayersTable() {
         normalizeString(player.firstName).includes(searchValue) ||
         normalizeString(player.lastName).includes(searchValue),
     );
-  }
-
-  if (selectedAvailable) {
-    filteredPlayers =
-      selectedAvailable === "My Team"
-        ? flatArray.filter((player) => player.myTeam === true)
-        : [...flatArray];
   }
 
   function applyFilter(value, defaultValue, field, compareFn) {
@@ -416,13 +386,6 @@ function createTableRow(item) {
     }
   };
 
-  const selectedAvailable = selectAvailable.value;
-  if (selectedAvailable !== "My Team" && item.myTeam) {
-    player.dataset.myTeamPlayer = "yes";
-  } else {
-    delete player.dataset.myTeamPlayer;
-  }
-
   player.addEventListener("click", handleClick);
   player
     .querySelectorAll("button, select, option, input")
@@ -496,7 +459,6 @@ clearButton.addEventListener("click", function () {
   updateTable();
 }); // Очистка поиска
 
-const filterAvailable = document.querySelector(".filter_available");
 const filterTeams = document.querySelector(".filter_teams");
 const filterPositions = document.querySelector(".filter_positions");
 function updateFilterTitle(select, filterContainer) {
@@ -541,7 +503,7 @@ function initializeTable() {
 
     updateRowCounter();
   } catch (error) {
-    console.error("Ошибка при инициализации таблицы:", error);
+    console.error("Ошибка при инициализации таблицы:", error.message);
   }
 } // Начальная отрисовка
 
@@ -592,11 +554,6 @@ function setupResponsiveTable() {
         const firstTd = row.firstElementChild;
         if (!firstTd) return;
 
-        const hasMyTeamPlayer = row.dataset.myTeamPlayer === "yes";
-        const toggleClass = (el, className) => {
-          el?.classList.toggle(className, hasMyTeamPlayer);
-        };
-
         if (mobile) {
           let statsRow = row.nextElementSibling;
           if (!statsRow || !statsRow.classList.contains("table_row-stats")) {
@@ -610,9 +567,6 @@ function setupResponsiveTable() {
             statsRow.playerData = row.playerData;
           }
 
-          toggleClass(row, "my_team_player");
-          toggleClass(statsRow, "my_team_player");
-
           firstTd.colSpan = 15;
           firstTd.classList.add("table_cell-mobile-first");
           statsRow.classList.toggle(
@@ -622,11 +576,9 @@ function setupResponsiveTable() {
         } else {
           const statsRow = row.nextElementSibling;
           if (statsRow && statsRow.classList.contains("table_row-stats")) {
-            toggleClass(statsRow, "my_team_player");
             [...statsRow.children].forEach((td) => row.appendChild(td));
             statsRow.remove();
           }
-          toggleClass(row, "my_team_player");
           firstTd.colSpan = 1;
           firstTd.classList.remove("table_cell-mobile-first");
         }
